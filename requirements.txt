@@ -1,0 +1,8 @@
+termcolor
+vunit
+vunit_hdl
+requests
+python-firebase
+joblib
+subprocess.run
+firebase_admin
