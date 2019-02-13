@@ -1,5 +1,4 @@
-Elementos De Sistemas!
+![](icon-elementos.png)
 
 > Desenvolvendo um computador operacional do ZERO!
 
-![](icon-elementos.png)
