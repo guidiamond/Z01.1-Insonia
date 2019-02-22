@@ -46,4 +46,4 @@ before_script:
 # INSERIR AQUI !!!
 ###############################################
 script:
-  - python3 Projetos/src/C-LogicaCombinacional/testeLogicaCombinacional.py
+  - python3 Projetos/C-LogicaCombinacional/testeLogicaCombinacional.py
