@@ -1,0 +1,49 @@
+# Refs
+# customizing the boot
+#   - https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix
+
+# Sudo enabled faz com que o travis inicialize
+# uma máquina ubuntu full, caso contrário
+# ele inicializa um docker.
+# com a contrapartida de levar mais tempo no boot
+# ref : https://docs.travis-ci.com/user/reference/overview/
+sudo: enabled
+dist: trusty
+
+language: java
+jdk:
+  - oraclejdk8
+
+# linguagens de desenvolvimento utilizada no build
+language: python
+python:
+  - '3.5'
+# command to install dependencies
+install:
+  - git submodule foreach 'git stash; git checkout master; git pull'
+  - pip install -r requirements.txt
+  
+before_script:
+# garante que o travis pare no primeiro erro
+#  - set -e
+# dependencias modelsim 
+  - sudo dpkg --add-architecture i386
+  - sudo apt-get update
+  - sudo apt-get install build-essential
+  - sudo apt-get install gcc-multilib g++-multilib lib32z1 lib32stdc++6 lib32gcc1 expat:i386 fontconfig:i386 libfreetype6:i386 libexpat1:i386 libc6:i386 libgtk-3-0:i386 libcanberra0:i386 libpng12-0:i386 libice6:i386 libsm6:i386 libncurses5:i386 zlib1g:i386 libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386 libxt6:i386 libxtst6:i386
+# modelSim download
+  - wget http://download.altera.com/akdlm/software/acdsinst/17.1std/590/ib_installers/ModelSimSetup-17.1.0.590-linux.run -O modelsim.run
+# modelsim install
+  - chmod +x modelsim.run
+  - ./modelsim.run --mode unattended --accept_eula 1 --installdir $HOME
+# corrigi bug modelsim com kernel 4
+  - sed -i '209 a\        4.[0-9]*)             vco="linux" ;;' $HOME/modelsim_ase/vco 
+# define o modelsim como simulador para o VUNIT
+  - export VUNIT_SIMULATOR=modelsim
+  - export VUNIT_MODELSIM_PATH=$HOME/modelsim_ase/bin/
+
+##############################################
+# INSERIR AQUI !!!
+###############################################
+script:
+  - python3 Projetos/C-LogicaCombinacional/testeLogicaCombinacional.py
