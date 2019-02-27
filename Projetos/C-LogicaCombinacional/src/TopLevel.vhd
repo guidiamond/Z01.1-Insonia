@@ -14,12 +14,17 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.all;
 
+
 ----------------------------
 -- Entrada e saidas do bloco
 ----------------------------
 entity TopLevel is
 	port(
 		SW      : in  std_logic_vector(9 downto 0);
+		HEX0 	  : out std_logic_vector(6 downto 0);
+		HEX1 	  : out std_logic_vector(6 downto 0);
+		HEX2 	  : out std_logic_vector(6 downto 0);
+		HEX5 	  : out std_logic_vector(6 downto 0);
 		LEDR    : out std_logic_vector(9 downto 0)
 	);
 end entity;
@@ -38,6 +43,9 @@ architecture rtl of TopLevel is
 ---------------
 begin
  
-  LEDR(0) <= SW(0);
+ u1: work.nand_z01 port map(A => SW(0),
+									 B => SW(1),
+									 Q => LEDR(0)
+									 );
 
 end rtl;
