@@ -1,8 +1,35 @@
 {
-  "Nome-Grupo": "Insonia"
+
+  "Nome-Grupo": "Insonia",
+
   "aluno-1": {
     "nome": "Evandro Fontana Romeiro",
     "email-insper": "evandrofr@al.insper.edu.br",
-    "user-github": "evandrofr"	
-	}
+    "user-github": "evandrofr"  
+    },
+
+  "aluno-2": {
+    "nome": "Guilherme Teixeira Batista",
+    "email-insper": "guilhermetb1@al.insper.edu.br",
+    "user-github": "guidiamond"  
+    },
+
+  "aluno-3": {
+    "nome": "Andre Tavernaro",
+    "email-insper": "andrevt1@al.insper.edu.br",
+    "user-github": "roguetaver"  
+    },
+
+  "aluno-4": {
+    "nome": "Michel Moraes",
+    "email-insper": "michel.haggiag@al.insper.edu.br",
+    "user-github": "mikomoares"  
+    },
+
+  "aluno-5": {
+    "nome": "Rafael Arfel",
+    "email-insper": "rafael.corsi@al.insper.edu.br",
+    "user-github": "4rfel"  
+    },
+
 }
