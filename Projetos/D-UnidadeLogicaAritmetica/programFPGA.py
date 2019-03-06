@@ -14,10 +14,10 @@ from config import *
 
 if __name__ == "__main__":
     print("------------------ Programando FPGA - ULA")
-    # inicializa notificacao
     noti = notificacao("D-ULA\n")
 
     if writeSOF(CDF_ULA_PATH):
         noti.error("FPGA NÃ̀O PROGRAMADA!")
         sys.exit(ERRO_PROGRAMING)
-    noti.alert("FPGA programada!")
+    noti.ok("FPGA programada!")
+    print('------------------- Concluido')
