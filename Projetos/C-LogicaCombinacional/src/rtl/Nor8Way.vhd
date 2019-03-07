@@ -17,5 +17,6 @@ end entity;
 architecture arch of Nor8Way is
 begin
 
+q <= '1' when a='0' and b='0' and c='0' and d='0' and e='0' and f='0' and g='0' and h='0' else '0';
 
 end architecture;
