@@ -47,3 +47,4 @@ before_script:
 ###############################################
 script:
   - python3 Projetos/C-LogicaCombinacional/testeLogicaCombinacional.py
+  - python Projetos/src/D-UnidadeLogicaAritmetica/testeULA.py
