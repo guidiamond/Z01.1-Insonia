@@ -11,5 +11,4 @@ end entity;
 architecture arch of Or16 is
 begin
 
-
 end architecture;
