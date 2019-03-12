@@ -7,6 +7,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Add16 is
 	port(
@@ -30,5 +31,7 @@ architecture rtl of Add16 is
 
 begin
   -- Implementação vem aqui!
+
+    q <= STD_LOGIC_VECTOR(UNSIGNED(a) + UNSIGNED(b));
 
 end architecture;
