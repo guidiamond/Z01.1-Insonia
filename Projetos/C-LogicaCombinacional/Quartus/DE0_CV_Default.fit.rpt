@@ -1,5 +1,5 @@
 Fitter report for DE0_CV_Default
-Thu Mar  7 21:31:45 2019
+Tue Mar 12 18:36:42 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Mar  7 21:31:45 2019       ;
+; Fitter Status                   ; Successful - Tue Mar 12 18:36:42 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE0_CV_Default                              ;
 ; Top-level Entity Name           ; TopLevel                                    ;
@@ -154,7 +154,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -534,7 +534,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
+The pin-out file can be found in /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -1798,18 +1798,18 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
 Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
-    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1821,7 +1821,7 @@ Info (332159): No clocks to report
 Warning (332068): No clocks defined in design.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
@@ -1829,24 +1829,24 @@ Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg
+Info (144001): Generated suppressed messages file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 181 warnings
-    Info: Peak virtual memory: 1805 megabytes
-    Info: Processing ended: Thu Mar  7 21:31:46 2019
-    Info: Elapsed time: 00:00:29
+    Info: Peak virtual memory: 1808 megabytes
+    Info: Processing ended: Tue Mar 12 18:36:43 2019
+    Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:26
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg.
+The suppressed messages can be found in /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.fit.smsg.
 
 

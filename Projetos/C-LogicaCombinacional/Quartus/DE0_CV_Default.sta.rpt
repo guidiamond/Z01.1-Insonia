@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE0_CV_Default
-Thu Mar  7 21:32:16 2019
+Tue Mar 12 18:36:54 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.5%      ;
+;     Processor 2            ;   2.3%      ;
 +----------------------------+-------------+
 
 
@@ -112,7 +112,7 @@ refer to the applicable agreement for further details.
 +--------------------+--------+--------------------------+
 ; SDC File Path      ; Status ; Read at                  ;
 +--------------------+--------+--------------------------+
-; DE0_CV_Default.sdc ; OK     ; Thu Mar  7 21:32:13 2019 ;
+; DE0_CV_Default.sdc ; OK     ; Tue Mar 12 18:36:51 2019 ;
 +--------------------+--------+--------------------------+
 
 
@@ -637,7 +637,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar  7 21:32:01 2019
+    Info: Processing started: Tue Mar 12 18:36:49 2019
 Info: Command: quartus_sta DE0_CV_Default -c DE0_CV_Default
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -645,18 +645,18 @@ Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'DE0_CV_Default.sdc'
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
-Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
-Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
-    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(5): CLOCK2_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(5): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 5
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(6): CLOCK3_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(6): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 6
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(7): CLOCK_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(7): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+    Info (332050): create_clock -period 20 [get_ports CLOCK_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 7
+Warning (332174): Ignored filter at DE0_CV_Default.sdc(8): CLOCK4_50 could not be matched with a port File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+Warning (332049): Ignored create_clock at DE0_CV_Default.sdc(8): Argument <targets> is an empty collection File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
+    Info (332050): create_clock -period 20 [get_ports CLOCK4_50] File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/Quartus/DE0_CV_Default.sdc Line: 8
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -714,8 +714,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 17 warnings
     Info: Peak virtual memory: 1067 megabytes
-    Info: Processing ended: Thu Mar  7 21:32:16 2019
-    Info: Elapsed time: 00:00:15
+    Info: Processing ended: Tue Mar 12 18:36:54 2019
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 
 
