@@ -32,7 +32,8 @@ architecture rtl of Inc16 is
   end component;
 
 begin
-  -- Implementação vem aqui!
+  -- Implementação vem aqui!!
+  
     q <= STD_LOGIC_VECTOR(TO_UNSIGNED(TO_INTEGER(UNSIGNED( a )) + 1, 16));
 
 end architecture;
