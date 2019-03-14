@@ -7,15 +7,12 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-use IEEE.NUMERIC_STD.ALL;
-
-
 
 entity Inc16 is
-	port(
-		a   :  in STD_LOGIC_VECTOR(15 downto 0);
-		q   : out STD_LOGIC_VECTOR(15 downto 0)
-	);
+  port(
+    a   :  in STD_LOGIC_VECTOR(15 downto 0);
+    q   : out STD_LOGIC_VECTOR(15 downto 0)
+  );
 end entity;
 
 architecture rtl of Inc16 is
@@ -27,13 +24,12 @@ architecture rtl of Inc16 is
     port(
       a   :  in STD_LOGIC_VECTOR(15 downto 0);
       b   :  in STD_LOGIC_VECTOR(15 downto 0);
-      q   : out STD_LOGIC_VECTOR(15 downto 0)
+      q   :  out STD_LOGIC_VECTOR(15 downto 0)
       );
   end component;
 
 begin
-  -- Implementação vem aqui!!
-  
-    q <= STD_LOGIC_VECTOR(TO_UNSIGNED(TO_INTEGER(UNSIGNED( a )) + 1, 16));
+  -- Implementação vem aqui!
+    q <= Add16 port map (a,"0000000000000001");
 
 end architecture;
