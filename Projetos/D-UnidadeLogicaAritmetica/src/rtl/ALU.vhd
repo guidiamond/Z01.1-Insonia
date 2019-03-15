@@ -37,6 +37,7 @@ entity ALU is
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
+			shift: in STD_LOGIC;					 -- setado se da um shift left
 			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
 			
 	);
@@ -85,6 +86,13 @@ architecture  rtl OF alu is
     );
 	end component;
 
+	component Shift_Left is
+		port(
+			a <= in STD_LOGIC_VECTOR(15 downto 0);
+			sel <= in STD_LOGIC;
+			q <= out STD_LOGIC_VECTOR(15 downto 0)
+		)
+
 	component Mux16 is
 		port (
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
@@ -94,7 +102,7 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,invout,precomp: std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
@@ -111,7 +119,9 @@ begin
 
     mux_and_add: Mux16 port map(andout, adderout, f, muxout);
 
-    inversor_mux: inversor16 port map(no, muxout, precomp);
+    inversor_mux: inversor16 port map(no, muxout, invout);
+
+    shift_mux: Shift_Left port map(muxout, shift, precomp);
 
     comparador_FINAL: comparador16 port map(precomp, zr, ng);
 
