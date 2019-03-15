@@ -34,6 +34,6 @@ architecture rtl of Inc16 is
 begin
   -- Implementação vem aqui!!
   
-    q <= STD_LOGIC_VECTOR(TO_UNSIGNED(TO_INTEGER(UNSIGNED( a )) + 1, 16));
+   inc1: Add16 port map (a,"0000000000000001",q);
 
 end architecture;
