@@ -92,6 +92,7 @@ architecture  rtl OF alu is
 			sel <= in STD_LOGIC;
 			q <= out STD_LOGIC_VECTOR(15 downto 0)
 		)
+	end component;
 
 	component Mux16 is
 		port (
