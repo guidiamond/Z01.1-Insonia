@@ -121,7 +121,7 @@ begin
 
     inversor_mux: inversor16 port map(no, muxout, invout);
 
-    shift_mux: Shift_Left port map(muxout, shift, precomp);
+    shift_mux: Shift_Left port map(muxout, shift, portrecomp);
 
     comparador_FINAL: comparador16 port map(precomp, zr, ng);
 
