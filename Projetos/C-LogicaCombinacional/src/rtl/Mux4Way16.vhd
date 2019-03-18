@@ -13,7 +13,13 @@ end entity;
 
 architecture arch of Mux4Way16 is
 begin
-
-q <= (a and not sel(0) and not sel(1)) or (b and not sel(1) and sel(0)) or (c and sel(0) and not sel(1)) or (d and sel(0) and sel(1));
+q <= a when (sel = "00") else
+	 b when (sel = "01") else
+	 c when (sel = "10") else
+	 d when (sel = "11");
+--q <= (a and not sel(0) and not sel(1)) or 
+--	 (b and not sel(1) and     sel(0)) or
+--	 (c and     sel(0) and not sel(1)) or
+--	 (d and     sel(0) and     sel(1));
 
 end architecture;
