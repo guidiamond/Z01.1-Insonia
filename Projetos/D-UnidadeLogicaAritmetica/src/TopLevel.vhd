@@ -32,7 +32,7 @@ architecture rtl of TopLevel is
 -- signals
 --------------
 
-  signal x : std_logic_vector(15 downto 0) := x"0073"; -- 163
+  signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
   signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
 
 --------------
