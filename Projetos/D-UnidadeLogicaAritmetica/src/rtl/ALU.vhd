@@ -110,7 +110,7 @@ architecture  rtl OF alu is
 			a: in STD_LOGIC_VECTOR(15 downto 0);
 			dir: in STD_LOGIC;
 			size: in STD_LOGIC_VECTOR(3 downto 0);
-			q: in STD_LOGIC_VECTOR(15 downto 0)
+			q: out STD_LOGIC_VECTOR(15 downto 0)
 		);
 	end component;
 
