@@ -23,7 +23,7 @@ entity TopLevel is
 			HEX1 	  : out std_logic_vector(0 to 6);
 			HEX2 	  : out std_logic_vector(0 to 6);
 			HEX3 	  : out std_logic_vector(0 to 6);
-			SW      : in  std_logic_vector(5 downto 0);
+			SW      : in  std_logic_vector(6 downto 0);
 			LEDR    : out std_logic_vector(9 downto 0)
 	);
 end entity;
@@ -38,7 +38,8 @@ architecture rtl of TopLevel is
 --------------
 
   signal x : std_logic_vector(15 downto 0) := x"0073"; -- 115
-  signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
+  --signal y : std_logic_vector(15 downto 0) := x"005F"; -- 95
+  signal y : std_logic_vector(15 downto 0) := x"8002"; -- 2'
   signal saida2: std_logic_vector(15 downto 0);
 --------------
 -- component
@@ -53,7 +54,7 @@ architecture rtl of TopLevel is
         nx	    :	 IN STD_LOGIC;
         zy	    :	 IN STD_LOGIC;
         ny	    :	 IN STD_LOGIC;
-        f		:	 IN STD_LOGIC;
+        f		:	 IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         no	    :	 IN STD_LOGIC;
         zr	    :	 OUT STD_LOGIC;
         ng	    :	 OUT STD_LOGIC;
@@ -70,15 +71,16 @@ begin
 	--x <= "0000000001110011";
 	--y <= "0000000001011111";
 	
-  ula0: ALU port map (
+  ula: ALU port map (
     x                  => x,
     Y                  => y,
     Zx                 => SW(0),
     Nx                 => SW(1),
     Zy                 => SW(2),
     Ny                 => SW(3),
-    F                  => SW(4),
-    No                 => SW(5),
+    F(0)               => SW(4),
+	 F(1) 				  => SW(5),
+    No                 => SW(6),
     Zr                 => LEDR(8),
     Ng                 => LEDR(9),
     Saida(15 downto 0)  => saida2
