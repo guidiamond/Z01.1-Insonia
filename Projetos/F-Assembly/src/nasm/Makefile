@@ -1,0 +1,1 @@
+CC      = /usr/bin/gcc
