@@ -25,6 +25,16 @@ component Ram8 is
 	);
 end component;
 
+component Ram64 is
+	port (
+			clock:   in  STD_LOGIC;
+			input:   in  STD_LOGIC_VECTOR(15 downto 0);
+			load:    in  STD_LOGIC;
+			address: in  STD_LOGIC_VECTOR( 5 downto 0);
+			output:  out STD_LOGIC_VECTOR(15 downto 0)
+		);
+end component;
+
 component Mux8Way16 is
 	port ( 
 			a:   in  STD_LOGIC_VECTOR(15 downto 0);
@@ -57,21 +67,50 @@ end component;
 
 
 signal  vet0,vet1,vet2,vet3,vet4,vet5,vet6,vet7  														 : STD_LOGIC;
-signal  stored_vet0,stored_vet1,stored_vet2,stored_vet3,stored_vet4,stored_vet5,stored_vet6,stored_vet7  : STD_LOGIC_VECTOR(15 downto 0);
+signal  stored_vet0,
+		stored_vet1,
+		stored_vet2,
+		stored_vet3,
+		stored_vet4,
+		stored_vet5,
+		stored_vet6,
+		stored_vet7  : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-	chose_memory_destination: DMux8Way port map(load, address, vet0, vet1, vet2, vet3, vet4, vet5, vet6, vet7);
-	vector0_creator: Register16 port map(clock, input, load, stored_vet0);
-	vector1_creator: Register16 port map(clock, input, load, stored_vet1);
-	vector2_creator: Register16 port map(clock, input, load, stored_vet2);
-	vector3_creator: Register16 port map(clock, input, load, stored_vet3);
-	vector4_creator: Register16 port map(clock, input, load, stored_vet4);
-	vector5_creator: Register16 port map(clock, input, load, stored_vet5);
-	vector6_creator: Register16 port map(clock, input, load, stored_vet6);
-	vector7_creator: Register16 port map(clock, input, load, stored_vet7);
 
+	read_memory_dmux8way: DMux8Way port map(
+		load, 
+		address(8 downto 6),
+		vet0,
+		vet1,
+		vet2,
+		vet3,
+		vet4,
+		vet5,
+		vet6,
+		vet7);
 
-	read_memory: Mux8Way16 port map(stored_vet0, stored_vet1, stored_vet2, stored_vet3, stored_vet4, stored_vet5, stored_vet6, stored_vet7, address, output);
+	chose_memory_destination: DMux8Way port map(load, address(5 downto 3), vet0, vet1, vet2, vet3, vet4, vet5, vet6, vet7);
+	vector0_creator: Ram64 port map(clock, input, vet0, address(5 downto 0), stored_vet0);
+	vector1_creator: Ram64 port map(clock, input, vet1, address(5 downto 0), stored_vet1);
+	vector2_creator: Ram64 port map(clock, input, vet2, address(5 downto 0), stored_vet2);
+	vector3_creator: Ram64 port map(clock, input, vet3, address(5 downto 0), stored_vet3);
+	vector4_creator: Ram64 port map(clock, input, vet4, address(5 downto 0), stored_vet4);
+	vector5_creator: Ram64 port map(clock, input, vet5, address(5 downto 0), stored_vet5);
+	vector6_creator: Ram64 port map(clock, input, vet6, address(5 downto 0), stored_vet6);
+	vector7_creator: Ram64 port map(clock, input, vet7, address(5 downto 0), stored_vet7);
+
+	read_memory_Mux8Way16: Mux8Way16 port map(
+		stored_vet0,
+		stored_vet1,
+		stored_vet2,
+		stored_vet3,
+		stored_vet4,
+		stored_vet5,
+		stored_vet6,
+		stored_vet7,
+		address(8 downto 6),
+		output);
 
 
 end architecture;
