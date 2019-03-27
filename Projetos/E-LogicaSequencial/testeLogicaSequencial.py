@@ -60,7 +60,7 @@ if __name__ == "__main__":
     tstLogiSeq.work.run()
 
     print("===================================================")
-    r = report(tstUla.log, 'E', 'HW')
+    r = report(tstLogiSeq.log, 'E', 'HW')
 
     # notificacao / log do teste
     noti.hw(r)
