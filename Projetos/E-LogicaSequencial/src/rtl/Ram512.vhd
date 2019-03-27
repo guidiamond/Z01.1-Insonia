@@ -66,7 +66,7 @@ component DMux8Way is
 end component;
 
 
-signal  vet0,vet1,vet2,vet3,vet4,vet5,vet6,vet7  														 : STD_LOGIC;
+signal  vet0,vet1,vet2,vet3,vet4,vet5,vet6,vet7: STD_LOGIC;
 signal  stored_vet0,
 		stored_vet1,
 		stored_vet2,
@@ -78,7 +78,7 @@ signal  stored_vet0,
 
 begin
 
-	read_memory_dmux8way: DMux8Way port map(
+	chose_memory_destination: DMux8Way port map(
 		load, 
 		address(8 downto 6),
 		vet0,
@@ -90,7 +90,6 @@ begin
 		vet6,
 		vet7);
 
-	chose_memory_destination: DMux8Way port map(load, address(5 downto 3), vet0, vet1, vet2, vet3, vet4, vet5, vet6, vet7);
 	vector0_creator: Ram64 port map(clock, input, vet0, address(5 downto 0), stored_vet0);
 	vector1_creator: Ram64 port map(clock, input, vet1, address(5 downto 0), stored_vet1);
 	vector2_creator: Ram64 port map(clock, input, vet2, address(5 downto 0), stored_vet2);
@@ -100,7 +99,7 @@ begin
 	vector6_creator: Ram64 port map(clock, input, vet6, address(5 downto 0), stored_vet6);
 	vector7_creator: Ram64 port map(clock, input, vet7, address(5 downto 0), stored_vet7);
 
-	read_memory_Mux8Way16: Mux8Way16 port map(
+	read_memory: Mux8Way16 port map(
 		stored_vet0,
 		stored_vet1,
 		stored_vet2,
