@@ -31,9 +31,7 @@ def testeAssembly(jar, testDir, nasmDir, hackDir, gui, verbose):
     os.path.abspath(nasm)
     os.path.abspath(hack)
 
-    #cError, cLog = assemblerFromTestDir(jar, nasmDir, hackDir)
-
-    cError, cLog = assemblerFromTestDir(jar, testDir, nasmDir, hackDir, )
+    cError, cLog = assemblerFromTestDir(jar, testDir, nasmDir, hackDir)
 
     if cError > 0:
         compileAllNotify(cError, cLog)
@@ -99,13 +97,13 @@ if __name__ == "__main__":
 
     error, log = testeAssembly(ASSEMBLER_JAR, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
 
-    if error >= 0:
-        print("\n-------------------------")
-        print("- Reportando resultado   ")
-        print("-------------------------")
-        r = report(log, 'F', 'SW')
-        error = r.assemblyTeste(log)
-        r.send()
+    print("\n-------------------------")
+    print("- Reportando resultado   ")
+    print("-------------------------")
+    import pdb; pdb.set_trace()
+
+    r = report(log, 'F', 'NASM')
+    r.send()
 
     print("\n--======== FIM ==========--")
     sys.exit(error)
