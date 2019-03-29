@@ -52,7 +52,7 @@ def testeAssembly(jar, testDir, nasmDir, hackDir, gui, verbose):
         print("-------------------------")
         tError, tLog = compareFromTestDir(testDir)
         if tError:
-            testeAssemblySimulateNotif(tError, tLog[0])
+            testeAssemblySimulateNotif(tError, tLog[:])
         return(tError, tLog)
 
     else:
