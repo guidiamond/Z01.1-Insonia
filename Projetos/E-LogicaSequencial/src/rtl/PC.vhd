@@ -29,6 +29,14 @@ architecture arch of PC is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
   -- utilizados nesse modulo.
+  component Inc16 is
+    port(
+
+        a: in STD_LOGIC_VECTOR(15 downto 0);
+        q: out STD_LOGIC_VECTOR(15 downto 0)
+  );
+  end component;
+
 
   component inc16 is
   port(

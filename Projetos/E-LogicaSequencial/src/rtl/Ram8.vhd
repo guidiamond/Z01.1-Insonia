@@ -80,4 +80,18 @@ begin
 	read_memory: Mux8Way16 port map(stored_vet0, stored_vet1, stored_vet2, stored_vet3, stored_vet4, stored_vet5, stored_vet6, stored_vet7, address, output);
 
 
+	chose_memory_destination: DMux8Way port map(load, address, vet0, vet1, vet2, vet3, vet4, vet5, vet6, vet7);
+	vector0_creator: Register16 port map(clock, input, load, stored_vet0);
+	vector1_creator: Register16 port map(clock, input, load, stored_vet1);
+	vector2_creator: Register16 port map(clock, input, load, stored_vet2);
+	vector3_creator: Register16 port map(clock, input, load, stored_vet3);
+	vector4_creator: Register16 port map(clock, input, load, stored_vet4);
+	vector5_creator: Register16 port map(clock, input, load, stored_vet5);
+	vector6_creator: Register16 port map(clock, input, load, stored_vet6);
+	vector7_creator: Register16 port map(clock, input, load, stored_vet7);
+
+
+	read_memory: Mux8Way16 port map(stored_vet0, stored_vet1, stored_vet2, stored_vet3, stored_vet4, stored_vet5, stored_vet6, stored_vet7, address, output);
+
+
 end architecture;
