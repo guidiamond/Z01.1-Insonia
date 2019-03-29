@@ -20,4 +20,4 @@ if __name__ == "__main__":
     # tenta detectar a versão do python do sistema
     # se python2 for a padrão, forca a execucao
     # com python 3
-    os.system('python main.py')
+    os.system('python3 main.py')
