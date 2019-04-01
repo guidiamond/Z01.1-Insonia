@@ -49,3 +49,4 @@ script:
   - python3 Projetos/C-LogicaCombinacional/testeLogicaCombinacional.py
   - python3 Projetos/D-UnidadeLogicaAritmetica/testeULA.py
   - python3 Projetos/E-LogicaSequencial/testeLogicaSequencial.py
+  - python3 Projetos/F-Assembly/testeAssembly.py
