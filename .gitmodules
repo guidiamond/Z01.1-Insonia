@@ -1,3 +1,4 @@
 [submodule "Projetos/Z01-tools"]
 	path = Projetos/Z01-tools
 	url = https://github.com/Insper/Z01-tools
+	branch = master
