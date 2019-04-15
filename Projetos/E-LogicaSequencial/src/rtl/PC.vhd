@@ -37,14 +37,6 @@ architecture arch of PC is
   );
   end component;
 
-
-  component inc16 is
-  port(
-    a   :  in STD_LOGIC_VECTOR(15 downto 0);
-    q   : out STD_LOGIC_VECTOR(15 downto 0)
-  );
-  end component;
-
 component Mux16 is
   port ( 
       a:   in  STD_LOGIC_VECTOR(15 downto 0);
