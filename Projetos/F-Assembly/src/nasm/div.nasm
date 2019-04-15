@@ -9,3 +9,17 @@
 ;
 ; Divisao entre numeros inteiros positivos
 ; ####################################################################
+
+
+leaw $0, %A
+movw (%A), %D
+loop_div:
+incw %S
+leaw $1, %A
+subw %D, (%A), %D
+leaw $loop_div, %A
+jge %D
+nop
+decw %S
+leaw $2, %A
+movw %S, (%A)
