@@ -19,3 +19,31 @@
 ;  RAM[13] = r
 ;  RAM[14] = a
 ; 
+
+
+leaw $10,%A
+movw (%A),%D
+leaw $14,%A
+subw (%A),%D,%S
+leaw $N_palin,%A
+jne %S
+nop
+leaw $11,%A
+movw (%A),%D
+leaw $13,%A
+subw (%A),%D,%S
+leaw $N_palin,%A
+jne %S
+nop
+leaw $1,%A
+movw %A,%D
+leaw $0,%A
+movw %D,(%A)
+leaw $fim,%A
+jmp
+nop
+N_palin:
+leaw $0,%A
+movw %A,%D
+movw %D,(%A)
+fim:
