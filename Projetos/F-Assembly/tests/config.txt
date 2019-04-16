@@ -3,8 +3,8 @@
 
 #isEven 2 1000
 #palindromo 2 1000
-stringLength 2 2000
-#abs 2 1000
+#stringLength 2 2000
+abs 2 1000
 #add 1 1000
 #div  2 10000
 #factorial 2 10000
