@@ -1,10 +1,14 @@
 # nome | quantidade de testes | us de execucao
 # us -> clock = /20
 
+<<<<<<< HEAD
 #isEven 2 1000
 #palindromo 2 1000
 #stringLength 2 2000
 abs 2 1000
+=======
+#abs 2 1000
+>>>>>>> d22b66315a090c7440e90b7acc4b5bf4340bca5f
 #add 1 1000
 #div  2 10000
 #factorial 2 10000
@@ -14,4 +18,9 @@ abs 2 1000
 #mult 1 10000
 #pow 2 10000
 #sub 1 1000
-#
+
+# conceito B
+
+#isEven 2 1000
+#palindromo 2 1000
+#stringLength 2 2000
