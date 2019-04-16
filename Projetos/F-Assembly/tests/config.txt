@@ -2,7 +2,6 @@
 # us -> clock = /20
 
 
-#abs 2 1000
 #add 1 1000
 #div  2 10000
 #factorial 2 10000
