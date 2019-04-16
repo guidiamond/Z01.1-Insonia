@@ -20,7 +20,6 @@
 ;  RAM[14] = a
 ; 
 
-
 leaw $10,%A
 movw (%A),%D
 leaw $14,%A

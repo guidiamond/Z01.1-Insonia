@@ -4,4 +4,3 @@
 ; Data: 27/03/2017
 ;
 ;  Encontra o resto da divisão entre RAM[0] e RAM[1] e o salva em RAM[2].
-
