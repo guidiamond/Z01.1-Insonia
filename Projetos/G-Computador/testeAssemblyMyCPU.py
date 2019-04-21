@@ -23,43 +23,59 @@ from testeAssembly import compareRam, compareFromTestDir, clearTestDir
 from simulateCPU import simulateFromTestDir
 from compileALL import compileAll, compileAllNotify
 from assembler import assemblerFromTestDir
+from notificacao import testeAssemblySimulateNotif
 
 
-def testeAssembly(jar, testDir, nasmDir, hackDir, gui, verbose, skip):
+def testeAssembly(jar, testDir, nasmDir, hackDir, gui, verbose):
 
-    pwd = os.path.dirname(os.path.abspath(__file__))
-    rtlDir = os.path.join(pwd, 'Z01-Simulator-RTL')
+    rtlDir = os.path.dirname(os.path.abspath(__file__))+'/Z01-Simulator-RTL/'
+    cError, cLog = assemblerFromTestDir(jar, testDir, nasmDir, hackDir)
 
-    # global path
-    os.path.abspath(nasm)
-    os.path.abspath(hack)
+    if cError > 0:
+        compileAllNotify(cError, cLog)
 
-    # compila
-    if skip is not False:
+    if cError == 0:
+        print("\n-------------------------")
+        print("- Simulando              ")
         print("-------------------------")
-        print("- Assembling files .... " )
+        clearTestDir(testDir)
+        sError, sLog = simulateFromTestDir(testDir, hackDir, gui, verbose, rtlDir=rtlDir)
+        if sError != ERRO_NONE:
+            testeAssemblySimulateNotif(sError, sLog)
+            sys.exit(1)
+
+        # testAssembling files
+        print("\n-------------------------")
+        print("- Testando               ")
         print("-------------------------")
-        assemblerAll(jar, nasm, hack, True)
+        tError, tLog = compareFromTestDir(testDir)
+        if tError:
+            testeAssemblySimulateNotif(tError, tLog[:])
+        return(tError, tLog)
 
-    # simulando
-    print("-------------------------")
-    print("- Simulating .... ")
-    print("-------------------------")
-    simulateFromTestDir(testDir, hackDir, gui, verbose, rtlDir=rtlDir)
+    else:
+        print("\n-------------------------")
+        print("- DICA                   ")
+        print("-------------------------")
+        print(" \n --> OS TESTES SÓ SERÃO EXECUTADOS QUANDO NÃO TIVER MAIS ERROS DE COMPILACÃO \n")
+        print(" Para realizar os testes não podemos ter error de compilacão no assembly.")
+        print(" Verifique o codigo com (erro de compilacao) e o corrija.")
+        print(" Reveja a sintaxe em: https://github.com/insper/z01.1/wiki/AssemblyZ1 \n")
 
-    # testAssembling files
-    print("-------------------------")
-    print("- Testando .... ")
-    print("-------------------------")
-    compareFromTestDir(testDir)
+        return(cError, cLog)
+
 
 if __name__ == "__main__":
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print("--======= INICIO ========--")
+
     ap = argparse.ArgumentParser()
     ap.add_argument("-c", "--testDir", help="lista de arquivos a serem testados")
-    ap.add_argument("-s", "--skipCompilation", help="não compila novamente os programas", action='store_true')
     ap.add_argument("-v", "--verbose", help="log simulacao", action='store_true')
     ap.add_argument("-g", "--gui", help="carrega model sim", action='store_true')
     args = vars(ap.parse_args())
+
+    pwd = os.path.dirname(os.path.abspath(__file__))
 
     if args["verbose"]:
         verbose = True
@@ -71,16 +87,18 @@ if __name__ == "__main__":
     else:
         gui = False
 
-    if args["skipCompilation"]:
-        skip = False
-    else:
-        skip = True
+    testDir = PROJ_F_PATH+"/tests/"
+    nasm = PROJ_F_PATH+"/src/nasm/"
+    hack = PROJ_F_PATH+"/bin/hack/"
 
-    pwd = os.path.dirname(os.path.abspath(__file__))
-    testDir = PROJ_PATH + "/F-Assembly/tests/"
-    nasm = PROJ_PATH + "/F-Assembly/src/nasm/"
-    hack = PROJ_PATH + "/G-Computador/bin/hack/"
+    error, log = testeAssembly(ASSEMBLER_JAR, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
 
-    jar = TOOL_PATH+"/jar/Z01-Assembler.jar"
-    testeAssembly(jar=jar, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose, skip=skip)
+    print("\n-------------------------")
+    print("- Reportando resultado   ")
+    print("-------------------------")
 
+    r = report(log, 'G', 'NASM')
+    r.send()
+
+    print("\n--======== FIM ==========--")
+    sys.exit(error)
