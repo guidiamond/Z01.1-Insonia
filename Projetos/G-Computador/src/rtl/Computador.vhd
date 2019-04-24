@@ -15,76 +15,78 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity Computador is
-
-   PORT(
+   generic(
+        IS_SIMULATION : std_logic := '0'
+   );
+   port(
         -- Sistema
-        CLOCK_50     : IN    STD_LOGIC;
-        RESET_N      : IN    STD_LOGIC;
-
-        -- LED e Chaves I/OS
-        LEDR         : OUT   STD_LOGIC_VECTOR(9 DOWNTO 0);
-        SW           : IN    STD_LOGIC_VECTOR(9 DOWNTO 0);
+        CLOCK_50     : in    std_logic;
+        RESET_N      : in    std_logic;
+        LEDR         : out   std_logic_vector(9 downto 0);
+        SW           : in    std_logic_vector(9 downto 0);
 
         -- LCD EXTERNAL I/OS
-        LCD_CS_N     : OUT   STD_LOGIC;
-        LCD_D        : INOUT STD_LOGIC_VECTOR(15 downto 0);
-        LCD_RD_N     : OUT   STD_LOGIC;
-        LCD_RESET_N  : OUT   STD_LOGIC;
-        LCD_RS       : OUT   STD_LOGIC;	      -- (DCx) 0 : reg, 1: command
-        LCD_WR_N     : OUT   STD_LOGIC;
-        LCD_ON       : OUT   STD_LOGIC	-- liga e desliga o LCD
+        LCD_CS_N     : out   std_logic;
+        LCD_D        : inout std_logic_vector(15 downto 0);
+        LCD_RD_N     : out   std_logic;
+        LCD_RESET_N  : out   std_logic;
+        LCD_RS       : out   std_logic;	      -- (DCx) 0 : reg, 1: command
+        LCD_WR_N     : out   std_logic;
+        LCD_ON       : out   std_logic	-- liga e desliga o LCD
+
+  
        );
 end entity;
 
 
-ARCHITECTURE logic OF Computador IS
+architecture logic of Computador is
 
 	component CPU is
 		 port(
-			  clock       :	in  STD_LOGIC;
-			  inM         : in  STD_LOGIC_VECTOR(15 downto 0);
-			  instruction : in  STD_LOGIC_VECTOR(15 downto 0);
-			  reset       : in  STD_LOGIC;
-			  outM        : out STD_LOGIC_VECTOR(15 downto 0);
-			  writeM      : out STD_LOGIC;
-			  addressM    : out STD_LOGIC_VECTOR(14 downto 0);
-			  pcout       : out STD_LOGIC_VECTOR(14 downto 0)
+			  clock       :	in  std_logic;
+			  inM         : in  std_logic_vector(15 downto 0);
+			  instruction : in  std_logic_vector(17 downto 0);
+			  reset       : in  std_logic;
+			  outM        : out std_logic_vector(15 downto 0);
+			  writeM      : out std_logic;
+			  addressM    : out std_logic_vector(14 downto 0);
+			  pcout       : out std_logic_vector(14 downto 0)
 	  );
 	end component;
 
-	component ROM32K IS
+	component ROM32K is
 		port(
-			address	  : IN STD_LOGIC_VECTOR (14 DOWNTO 0);
-			clock	    : IN STD_LOGIC  := '1';
-			q		      : OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
+			address	  : in std_logic_vector (14 downto 0);
+			clock	    : in std_logic  := '1';
+			q		      : out std_logic_vector (17 downto 0)
 		);
-	END component;
+	end component;
 
 	component MemoryIO is
-		PORT(
+		port(
 			  -- Sistema
-        CLK_SLOW : IN  STD_LOGIC;
-        CLK_FAST : IN  STD_LOGIC;
-			  RST      : IN  STD_LOGIC;
+        CLK_SLOW : in  std_logic;
+        CLK_FAST : in  std_logic;
+			  RST      : in  std_logic;
 
 			  -- RAM 16K
-			  ADDRESS		: IN STD_LOGIC_VECTOR (14 DOWNTO 0);
-			  INPUT			: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
-			  LOAD			: IN STD_LOGIC ;
-			  OUTPUT	    : OUT STD_LOGIC_VECTOR (15 DOWNTO 0);
+			  ADDRESS		  : in std_logic_vector (14 downto 0);
+			  INPUT			  : in std_logic_vector (15 downto 0);
+			  LOAD			  : in std_logic ;
+			  OUTPUT	    : out std_logic_vector (15 downto 0);
 
 			  -- LCD EXTERNAL I/OS
-			  LCD_CS_N     : OUT   STD_LOGIC;
-			  LCD_D        : INOUT STD_LOGIC_VECTOR(15 downto 0);
-			  LCD_RD_N     : OUT   STD_LOGIC;
-			  LCD_RESET_N  : OUT   STD_LOGIC;
-			  LCD_RS       : OUT   STD_LOGIC;	-- (DCx) 0 : reg, 1: command
-			  LCD_WR_N     : OUT   STD_LOGIC;
-			  LCD_ON       : OUT   STD_LOGIC;
-			  LCD_INIT_OK  : OUT   STD_LOGIC;
-
-			  SW  : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-			  LED : OUT STD_LOGIC_VECTOR(9 DOWNTO 0)
+			  LCD_CS_N     : out   std_logic;
+			  LCD_D        : inout std_logic_vector(15 downto 0);
+			  LCD_RD_N     : out   std_logic;
+			  LCD_RESET_N  : out   std_logic;
+			  LCD_RS       : out   std_logic;	-- (DCx) 0 : reg, 1: command
+			  LCD_WR_N     : out   std_logic;
+			  LCD_ON       : out   std_logic;
+			  LCD_INIT_OK  : out   std_logic;
+			  
+			  SW  : in std_logic_vector(9 downto 0);
+			  LED : out std_logic_vector(9 downto 0)        
 			 );
 	end component;
 
@@ -98,34 +100,44 @@ ARCHITECTURE logic OF Computador IS
 		);
   end component;
 
+  signal INPUT        : std_logic_vector(15 downto 0) := "1111111111111111";
+  signal ADDRESS      : std_logic_vector(14 downto 0) := (others => '0') ; -- meio 00100101101010
+  signal LOAD         : std_logic := '0';
+  signal LCD_INIT_OK  : std_logic;
 
-  SIGNAL INPUT        : STD_LOGIC_VECTOR(15 downto 0) := "1111111111111111";
-  SIGNAL ADDRESS      : STD_LOGIC_VECTOR(14 downto 0) := (others => '0') ; -- meio 00100101101010
-  SIGNAL LOAD         : STD_LOGIC := '0';
-  SIGNAL LCD_INIT_OK  : STD_LOGIC;
+  signal CLK_FAST           : std_logic;
+  signal CLK_SLOW           : std_logic;
+  signal RST_CPU, RST_MEM   : std_logic := '1';
+  signal RESET              : std_logic;
+  signal PLL_LOCKED         : std_logic;
 
-  SIGNAL CLK_FAST           : STD_LOGIC;
-  SIGNAL CLK_SLOW           : STD_LOGIC;
-  SIGNAL RST_CPU, RST_MEM   : STD_LOGIC := '1';
-  SIGNAL RESET              : STD_LOGIC;
-  SIGNAL PLL_LOCKED         : STD_LOGIC;
+  signal OUTPUT_RAM   : std_logic_vector(15 downto 0);
+  signal INSTRUCTION  : std_logic_vector(17 downto 0);
+  signal PC           : std_logic_vector(14 downto 0);
 
-  SIGNAL OUTPUT_RAM   : STD_LOGIC_VECTOR(15 downto 0);
-  SIGNAL INSTRUCTION  : STD_LOGIC_VECTOR(15 downto 0);
-  SIGNAL PC			      : STD_LOGIC_VECTOR(14 downto 0);
+  signal S_key_code   : std_logic_vector(6 downto 0);
+  signal S_key_new    : std_logic;
+
+begin
 
 
-BEGIN
-
-	PLL_inst : PLL PORT map (
+PLL_RTL: if (IS_SIMULATION = '0') generate
+	PLL_inst : PLL port map (
     refclk   => CLOCK_50,
     rst      => RESET,
     outclk_0 => CLK_FAST,
     outclk_1 => CLK_SLOW,
     locked   => PLL_LOCKED
-     );
+    );
+end generate;
 
-	MAIN_CPU : CPU PORT MAP (
+PLL_SIM: if (IS_SIMULATION = '1') generate
+    CLK_FAST <= CLOCK_50;
+    CLK_SLOW <= CLOCK_50;
+    PLL_LOCKED <= '1';
+end generate;
+
+MAIN_CPU : CPU port map (
     clock       => CLK_SLOW,
     inM         => OUTPUT_RAM,
     instruction => INSTRUCTION,
@@ -136,13 +148,13 @@ BEGIN
     pcout       => PC
 	);
 
-	ROM : ROM32K PORT MAP (
+ROM : ROM32K port map (
     address	=> PC(14 downto 0),
-    clock	  => CLOCK_50,
+    clock	  => CLK_FAST,
     q		    => INSTRUCTION
-  );
+   );
 
-	MEMORY_MAPED : MemoryIO PORT MAP (
+MEMORY_MAPED : MemoryIO port map (
     CLK_FAST    => CLK_FAST,
     CLK_SLOW    => CLK_SLOW,
     RST         => RST_MEM,
@@ -158,17 +170,27 @@ BEGIN
     LCD_RS 		  => LCD_RS,
     LCD_WR_N 	  => LCD_WR_N,
     SW          => SW,
-    LED         => LEDR,
-    key_clk     => key_clk,
-    key_data    => key_data,
-    key_code    => s_key_code,
-    key_new     => s_key_new
-  );
+    LED         => LEDR
+   );
 
   -- Resets
-  RST_CPU <= RESET or (not LCD_INIT_OK) or (not PLL_LOCKED); -- REINICIA CPU
-	RST_MEM <= RESET or (not PLL_LOCKED);                      -- REINICIA MemoryIO
-	RESET   <= NOT RESET_N;
+RST_RTL: if (IS_SIMULATION = '0') generate
+  RST_CPU <= RESET or (not LCD_INIT_OK) or (not PLL_LOCKED);
+  RST_MEM <= RESET or (not PLL_LOCKED);
+  RESET   <= not RESET_N;
+end generate;
+
+RST_SIM: if (IS_SIMULATION = '1') generate
+  RST_CPU <= RESET;
+  RST_MEM <= RESET;
+  RESET   <= not RESET_N;
+end generate;
+
+ -- LEDR(0) <= RST_CPU;
+ -- LEDR(1) <= RST_MEM;
+ -- LEDR(2) <= RESET;
+ -- LEDR(3) <= PLL_LOCKED;
+ -- LEDR(4) <= LCD_INIT_OK;
 
   -- LCD on
   LCD_ON <= '1';
