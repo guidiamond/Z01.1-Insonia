@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity ControlUnit is
     port(
-		instruction                 : in STD_LOGIC_VECTOR(15 downto 0);  -- instrução para executar
+		instruction                 : in STD_LOGIC_VECTOR(17 downto 0);  -- instrução para executar
 		zr,ng                       : in STD_LOGIC;                      -- valores zr(se zero) e ng(se negativo) da ALU
 		muxALUI_A                   : out STD_LOGIC;                     -- mux que seleciona entre instrução e ALU para reg. A
 		muxAM_ALU                   : out STD_LOGIC;                     -- mux que seleciona entre reg. A e Mem. RAM para ALU
