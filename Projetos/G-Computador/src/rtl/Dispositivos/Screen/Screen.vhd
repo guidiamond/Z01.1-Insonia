@@ -103,32 +103,32 @@ BEGIN
     RST         => RST,
     PX_X        => STD_LOGIC_VECTOR(PX_X),
     PX_Y        => STD_LOGIC_VECTOR(PX_Y),
-    PX_COLOR 	=> PX_COLOR,
-    PX_EN 		=> PX_EN,
+    PX_COLOR 		=> PX_COLOR,
+    PX_EN 			=> PX_EN,
     PX_RDY      => PX_RDY,
     LCD_INIT_OK => INIT_OK,
-    LCD_CS_N 	=> LCD_CS_N ,
-    LCD_D 		=> LCD_D,
-    LCD_RD_N 	=> LCD_RD_N,
+    LCD_CS_N 		=> LCD_CS_N ,
+    LCD_D 			=> LCD_D,
+    LCD_RD_N 		=> LCD_RD_N,
     LCD_RESET_N => LCD_RESET_N,
     LCD_RS 	    => LCD_RS,
-    LCD_WR_N 	=> LCD_WR_N
+    LCD_WR_N 		=> LCD_WR_N
     );
 
   FIFO16x4096_inst : FIFO16x4096 PORT MAP (
-    data	=> fifo_data,
-    wrclk	=> CLK_SLOW,
-    wrreq	=> LOAD,
-    rdclk	=> CLK_FAST,
-    rdreq	=> fifo_rdreq,
-    q	    => fifo_q,
+    data	  => fifo_data,
+    wrclk	  => CLK_SLOW,
+    wrreq	  => LOAD,
+    rdclk	  => CLK_FAST,
+    rdreq	  => fifo_rdreq,
+    q	      => fifo_q,
     rdempty	=> fifo_rdempty,
     wrfull	=> fifo_wfull
 	);
 
---Testing
---Deve criar uma linha no LCD
---process (CLK_FAST, rst)
+----Testing
+----Deve criar uma linha no LCD
+--process (CLK_FAST)
 --begin
 --    if( rising_edge(CLK_FAST)) then
 --        if(rst = '1') then
@@ -185,9 +185,9 @@ begin
         when s_pxUpdate =>
           if(pixel < 16) then
             if(fifo_q_pxs(pixel) = '1') then
-              PX_COLOR <= x"0000"; -- PRETO
+              PX_COLOR <= "0000000000000000"; -- PRETO
             else
-              PX_COLOR <= x"FFFF"; -- Branco
+              PX_COLOR <= "1111111111111111"; -- Branco
             end if;
             PX_Y  <= "0000000000000000" + ((to_integer(unsigned(fifo_q_addr)) mod 20) * 16) + pixel;
             PX_X  <= "0000000011101111" - (to_integer(unsigned(fifo_q_addr)) / 20);
@@ -215,11 +215,5 @@ begin
     end if;
   end if;
 end process;
-
-
-
-
-
-
 
 END logic;

@@ -255,10 +255,9 @@ BEGIN
 			delay_en <= '1';          -- active delay
             LCD_WR_N <= '0';          -- LCD Write
             LCD_RS   <= '1';          -- LCD config mode
-			LCD_CS_N <= '0';
-            --LCD_D    <= x"FFA5"; 
-			LCD_D    <= x"FFFF";  -- Branco
-			--LCD_D    <= x"0000"; -- (Eu mudei para ficar preto Luciano Soares)
+            LCD_CS_N <= '0';
+            LCD_D    <= x"FFA5"; 
+            --LCD_D    <= x"0000"; -- (Eu mudei para ficar preto Luciano Soares)
             IF(delay_en = '1') THEN
                 delay_en <= '0';      -- disable delay
                 LCD_WR_N <= '1';      -- LCD disable Write
