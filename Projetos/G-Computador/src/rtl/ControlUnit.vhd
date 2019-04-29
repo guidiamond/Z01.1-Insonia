@@ -53,9 +53,14 @@ loadD <= instruction(17) and instruction(4);
 
 loadS <= instruction(17) and instruction(5);
 
-loadPC <= (((not ng) and ((not zr) and ((not instruction(2)) and (instruction(0) and (instruction(17))))))) or 
-(instruction(2) and (instruction(1) and (instruction(0) and (instruction(17))))) or
-(ng and ((not zr) and (instruction(2) and (instruction(17))))) or
-(zr and (instruction(2) and (instruction(0) and (instruction(17)))));
+loadPC <= '1' when instruction(2 downto 0)="001" and ng='0' and zr='0' and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="011" and ng='0'            and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="010"            and zr='1' and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="110" and ng='1'            and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="110"            and zr='1' and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="111"                       and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="101"            and zr='0' and instruction(17)='1' else
+		  '1' when instruction(2 downto 0)="100" and ng='0' and zr='1' and instruction(17)='1' else
+		  '0';
 
 end architecture;
