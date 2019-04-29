@@ -64,3 +64,4 @@ loadPC <= '1' when instruction(2 downto 0)="001" and ng='0' and zr='0' and instr
 		  '0';
 
 end architecture;
+
