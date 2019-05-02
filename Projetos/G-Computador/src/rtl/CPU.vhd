@@ -106,7 +106,7 @@ architecture arch of CPU is
 
   signal s_pcout: STD_LOGIC_VECTOR(15 downto 0);
 
-
+--tauverna este aqui
 begin
    muxALUI: Mux16 port map(s_ALUout,instruction,c_muxALUI_A,s_muxALUI_Aout);
    muxSD: Mux16 port map(s_regSout,s_regDout,c_muxSD_ALU,s_muxSDout);
