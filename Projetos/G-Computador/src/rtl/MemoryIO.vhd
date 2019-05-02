@@ -76,36 +76,92 @@ ARCHITECTURE logic OF MemoryIO IS
       q   : out STD_LOGIC_VECTOR (15 downto 0));
   end component;
 
+  component Register16 is
+    port(
+      clock:   in STD_LOGIC;
+      input:   in STD_LOGIC_VECTOR(15 downto 0);
+      load:    in STD_LOGIC;
+      output: out STD_LOGIC_VECTOR(15 downto 0));
+  end component;
+
+  component DMux4Way is
+    port ( 
+      a:   in  STD_LOGIC;
+      sel: in  STD_LOGIC_VECTOR(1 downto 0);
+      q0:  out STD_LOGIC;
+      q1:  out STD_LOGIC;
+      q2:  out STD_LOGIC;
+      q3:  out STD_LOGIC);
+  end component;
+
+signal sel1 : STD_LOGIC_VECTOR(1 downto 0);
+signal sel2 : STD_LOGIC_VECTOR(1 downto 0);
+signal outMUX: STD_LOGIC_VECTOR(3 downto 0;
+signal outRAM16: STD_LOGIC_VECTOR(15 downto 0);
+signal outREG16 : STD_LOGIC_VECTOR(15 downto 0);
+signal switch : STD_LOGIC_VECTOR(15 downto 0);
+signal nullDMUX: STD_LOGIC;
+signal nullMUX: STD_LOGIC_VECTOR(1 downto 0);
 begin
-
------------------------------------
--- Dicas de uso, screen e RAM16k --
------------------------------------
-
---    DISPLAY: Screen  port map (
---          RST         => RST,
---          CLK_FAST    => CLK_FAST,
---          CLK_SLOW    => CLK_SLOW,
---          INPUT       =>
---          LOAD        =>
---          ADDRESS     =>
---          LCD_INIT_OK => LCD_INIT_OK,
---          LCD_CS_N 	  => LCD_CS_N ,
---          LCD_D       => LCD_D,
---          LCD_RD_N 	  => LCD_RD_N,
---          LCD_RESET_N => LCD_RESET_N,
---          LCD_RS 	    => LCD_RS,
---          LCD_WR_N 	  => LCD_WR_N
---    );
+    DISPLAY: Screen  port map (
+          RST         => RST,
+          CLK_FAST    => CLK_FAST,
+          CLK_SLOW    => CLK_SLOW,
+          INPUT       => INPUT(15 downto 0),
+          LOAD        => outMUX(2),
+          ADDRESS     => ADDRESS(13 downto 0),
+          LCD_INIT_OK => LCD_INIT_OK,
+          LCD_CS_N 	  => LCD_CS_N ,
+          LCD_D       => LCD_D,
+          LCD_RD_N 	  => LCD_RD_N,
+          LCD_RESET_N => LCD_RESET_N,
+          LCD_RS 	    => LCD_RS,
+          LCD_WR_N 	  => LCD_WR_N
+    );
 
 
---    RAM: RAM16K  PORT MAP(
---         clock		=> CLK_FAST,
---         address  =>
---         data		  =>
---         wren		  =>
---         q		    =>
---    );
+    RAM: RAM16K  PORT MAP(
+         clock    => CLK_FAST,
+         address  => ADDRESS(13 DOWNTO 0),
+         data     => INPUT(15 DOWNTO 0),
+         wren     => outMUX(0),
+         q        => outRAM16
+    );
 
+    DMUX: DMux4Way PORT MAP(
+      a => LOAD,
+      sel =>sel1,
+      q0 => outMUX(0),
+      q1 => outMUX(1),
+      q2 => outMUX(2),
+      q3 => nullDMUX
+    );
+
+    MUX: Mux4Way16 PORT Map(
+      sel => sel2,
+      a => switch,
+      b => outRAM16,
+      c => nullMUX(0),
+      d => nullMUX(1),
+      q => OUTPUT
+      );
+
+    REG: Register16 PORT MAP(
+          clock => CLK_SLOW,
+          input =>  INPUT(15 DOWNTO 0),
+          load  =>  outMUX(1),
+          output => outREG16
+        );
+
+    sel1 <= "00" when ADDRESS(14 downto 0) <= "011111111111111" else
+            "10" when ADDRESS(14 downto 0) <= "101001010111111" else
+            "01" when ADDRESS(14 downto 0) = "101001011000000"  else
+            "11";
+
+    sel2 <= "01" when ADDRESS(14 downto 0) <= "011111111111111" else
+            "00";
+
+    LED <= outREG16(9 downto 0);
+    switch(9 downto 0) <= SW; 
 
 END logic;
