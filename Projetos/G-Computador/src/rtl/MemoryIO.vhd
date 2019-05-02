@@ -96,14 +96,15 @@ ARCHITECTURE logic OF MemoryIO IS
 
 signal sel1 : STD_LOGIC_VECTOR(1 downto 0);
 signal sel2 : STD_LOGIC_VECTOR(1 downto 0);
-signal outMUX: STD_LOGIC_VECTOR(3 downto 0;
+signal outMUX: STD_LOGIC_VECTOR(3 downto 0);
 signal outRAM16: STD_LOGIC_VECTOR(15 downto 0);
 signal outREG16 : STD_LOGIC_VECTOR(15 downto 0);
 signal switch : STD_LOGIC_VECTOR(15 downto 0);
 signal nullDMUX: STD_LOGIC;
 signal nullMUX: STD_LOGIC_VECTOR(1 downto 0);
+
 begin
-    DISPLAY: Screen  port map (
+    DISPLAY: Screen port map (
           RST         => RST,
           CLK_FAST    => CLK_FAST,
           CLK_SLOW    => CLK_SLOW,
