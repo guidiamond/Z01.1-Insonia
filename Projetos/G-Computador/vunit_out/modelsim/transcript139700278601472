@@ -1,0 +1,61 @@
+# do /home/borg/.local/lib/python3.6/site-packages/vunit/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_controlunit(tb) -L vunit_lib -L lib -g/tb_controlunit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true" 
+# Start time: 16:35:53 on Apr 28,2019
+# ** Warning: Design size of 21077 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/muxALUI_A has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/muxAM has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/muxSD_ALU has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/muxAMD_ALU has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/zx has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/nx has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/zy has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/ny has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/f has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/no has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/loadA has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/loadD has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/loadS has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/loadM has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_controlunit/uCU/loadPC has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Error: Falha em leaw 0xFFFF, %A
+#    Time: 100 ps  Iteration: 0  Process: /tb_controlunit/main File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
+# Break in Process main at /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd line 56
+# Stopped at /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd line 56
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd 56 return [address 0xf6c3d1d7] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   51 : 
+#   52 : 		-- Teste: A instruction
+#   53 :     instruction <= "00" & "0111111111111111";
+#   54 :     wait until clk = '1';
+#   55 : 		assert(loadA = '1' and loadD = '0' and loadM = '0' and loadPC = '0' and muxALUI_A = '1')
+# ->56 :       report "Falha em leaw 0xFFFF, %A" severity error;
+#   57 : 
+#   58 : 		-- leaw %5, %A
+#   59 :     instruction <= "00" & "0000000000000101";
+#   60 :     wait until clk = '1';
+# 
+# End time: 16:35:53 on Apr 28,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 17
