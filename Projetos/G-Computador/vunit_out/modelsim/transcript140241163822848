@@ -1,0 +1,37 @@
+# do /home/borg/.local/lib/python3.6/site-packages/vunit/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_memoryio.all_693188ce223cc7c1fc8926d3961549e052c55f8a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_memoryio(tb) -L vunit_lib -L lib -g/tb_memoryio/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_memoryio.all_693188ce223cc7c1fc8926d3961549e052c55f8a/,tb path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true" 
+# Start time: 14:13:05 on Apr 24,2019
+# ** Warning: Design size of 21007 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_memoryio/u1/OUTPUT(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_memoryio/u1/LCD_D(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_memoryio/u1/LED(9 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Error: Falha em RAM[0] = xA5A5
+#    Time: 3 ns  Iteration: 0  Process: /tb_memoryio/main File: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
+# Break in Process main at /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd line 99
+# Stopped at /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd line 99
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd 99 return [address 0xf6c3d2d9] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   94 :     load    <= '1';
+#   95 :     wait until clk_slow = '1';
+#   96 :     input <= x"0000";
+#   97 :     load  <= '0';
+#   98 : 		assert(output = x"A5A5")
+# ->99 :       report "Falha em RAM[0] = xA5A5" severity error;
+#   100 : 
+#   101 : 		-- Teste: A  - RAM endereço 8192 (meiop)
+#   102 :     address <= std_logic_vector(to_unsigned(8192, 15));
+#   103 :     input   <= x"AAA3";
+# 
+# End time: 14:13:05 on Apr 24,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
