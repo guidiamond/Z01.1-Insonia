@@ -33,18 +33,19 @@ entity ALU is
 			nx:    in STD_LOGIC;                     -- inverte a entrada x
 			zy:    in STD_LOGIC;                     -- zera a entrada y
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+			f:     in STD_LOGIC_VECTOR(1 downto 0);  -- se 0 calcula x & y, senão x + y ou shift de x
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
 			saida: out STD_LOGIC_VECTOR(15 downto 0) -- saída de dados da ALU
+			
 	);
 end entity;
 
 architecture  rtl OF alu is
   -- Aqui declaramos sinais (fios auxiliares)
   -- e componentes (outros módulos) que serao
-  -- utilizados nesse modulo.
+  -- utilizados nesse modulo.15
 
 	component zerador16 IS
 		port(z   : in STD_LOGIC;
@@ -93,9 +94,50 @@ architecture  rtl OF alu is
 		);
 	end component;
 
-   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,muxout,precomp: std_logic_vector(15 downto 0);
+	component Mux4Way16 is
+		port (
+			a:   in  STD_LOGIC_VECTOR(15 downto 0);
+			b:   in  STD_LOGIC_VECTOR(15 downto 0);
+			c:   in  STD_LOGIC_VECTOR(15 downto 0);
+			d:   in  STD_LOGIC_VECTOR(15 downto 0);
+			sel: in  STD_LOGIC_VECTOR(1 downto 0);
+			q:   out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+	component BarrelShifter16 is
+		port (
+			a: in STD_LOGIC_VECTOR(15 downto 0);
+			dir: in STD_LOGIC;
+			size: in STD_LOGIC_VECTOR(3 downto 0);
+			q: out STD_LOGIC_VECTOR(15 downto 0)
+		);
+	end component;
+
+   SIGNAL zxout,zyout,nxout,nyout,andout,adderout,shiftout,muxout,precomp: std_logic_vector(15 downto 0);
 
 begin
   -- Implementação vem aqui!
+
+
+    zerador_x: zerador16 port map(zx, x, zxout);
+    inversor_x: inversor16 port map(nx, zxout, nxout);
+
+    zerador_y: zerador16 port map(zy, y, zyout);
+    inversor_y: inversor16 port map(ny, zyout, nyout);
+
+    and_x_y: And16 port map(nxout, nyout, andout);
+    add_x_y: Add16 port map(nxout, nyout, adderout);
+    shift_x: BarrelShifter16 port map(nxout, y(15), y(3 downto 0), shiftout);
+
+    mux_and_add: Mux4Way16 port map(andout, adderout, shiftout, shiftout, f, muxout);
+ -- "0000000000000000"
+    inversor_mux: inversor16 port map(no, muxout, precomp);
+
+    comparador_FINAL: comparador16 port map(precomp, zr, ng);
+
+    saida <= precomp;
+
+	 
 
 end architecture;

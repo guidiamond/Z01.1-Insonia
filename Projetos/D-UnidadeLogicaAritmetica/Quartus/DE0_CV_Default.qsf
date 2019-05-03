@@ -41,7 +41,7 @@
 # Project-Wide Assignments
 # ========================
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13
-set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "MON MAY  5 11:54:18 2014"
 set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
 set_global_assignment -name SMART_RECOMPILE ON
@@ -536,7 +536,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 
 # end ENTITY(TopLevel)
 # --------------------
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SDC_FILE DE0_CV_Default.sdc
 set_global_assignment -name VHDL_FILE ../src/TopLevel.vhd
 set_global_assignment -name VHDL_FILE ../src/rtl/inversor16.vhd
@@ -565,3 +564,4 @@ set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/rtl/DMux2
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd"
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/rtl/BarrelShifter8.vhd"
 set_global_assignment -name VHDL_FILE "../../C-LogicaCombinacional/src/rtl/And16.vhd"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -14,5 +14,9 @@ end entity;
 architecture arch of Mux4Way is
 begin
 
+	q <= (a and not sel(0) and not sel(1)) or
+		 (b and     sel(0) and not sel(1)) or
+		 (c and not sel(0) and     sel(1)) or
+		 (d and     sel(0) and     sel(1));
 
 end architecture;

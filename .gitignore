@@ -1,2 +1,4 @@
 __pycache__/
 vunit_out/
+.GRUPO.json
+config*

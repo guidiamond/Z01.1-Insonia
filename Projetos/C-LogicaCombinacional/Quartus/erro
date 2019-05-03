@@ -1,0 +1,95 @@
+Info (293032): Detected changes in source files.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd has changed.
+Info (293032): Detected changes in source files.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd has changed.
+Info (293032): Detected changes in source files.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd has changed.
+	Info (293027): Source file: /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd has changed.
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+	Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+	Info: Processing started: Tue Mar 12 18:27:56 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE0_CV_Default -c DE0_CV_Default
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/TopLevel.vhd
+	Info (12022): Found design unit 1: TopLevel-rtl
+	Info (12023): Found entity 1: TopLevel
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+	Info (12022): Found design unit 1: Or16-arch
+	Info (12023): Found entity 1: Or16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+	Info (12022): Found design unit 1: Or8Way-arch
+	Info (12023): Found entity 1: Or8Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+	Info (12022): Found design unit 1: Not16-arch
+	Info (12023): Found entity 1: Not16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+	Info (12022): Found design unit 1: Nor8Way-arch
+	Info (12023): Found entity 1: Nor8Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+	Info (12022): Found design unit 1: nand_z01-rtl
+	Info (12023): Found entity 1: nand_z01
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+	Info (12022): Found design unit 1: Mux16-arch
+	Info (12023): Found entity 1: Mux16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+	Info (12022): Found design unit 1: Mux8Way16-arch
+	Info (12023): Found entity 1: Mux8Way16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+	Info (12022): Found design unit 1: Mux8Way-arch
+	Info (12023): Found entity 1: Mux8Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+	Info (12022): Found design unit 1: Mux4Way16-arch
+	Info (12023): Found entity 1: Mux4Way16
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+	Info (12022): Found design unit 1: Mux4Way-arch
+	Info (12023): Found entity 1: Mux4Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+	Info (12022): Found design unit 1: Mux2Way-arch
+	Info (12023): Found entity 1: Mux2Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+	Info (12022): Found design unit 1: DMux8Way-arch
+	Info (12023): Found entity 1: DMux8Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+	Info (12022): Found design unit 1: DMux4Way-rtl
+	Info (12023): Found entity 1: DMux4Way
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+	Info (12022): Found design unit 1: DMux2Way-rtl
+	Info (12023): Found entity 1: DMux2Way
+Warning (12019): Can't analyze file -- file ../src/rtl/BarrelShifter16.vhd is missing
+Warning (12019): Can't analyze file -- file ../src/rtl/BarrelShifter8.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+	Info (12022): Found design unit 1: And16-arch
+	Info (12023): Found entity 1: And16
+Warning (12019): Can't analyze file -- file ../Hexadecimal.vhd is missing
+Error (10381): VHDL Type Mismatch error at Mux4Way16.vhd(17): indexed name returns a value whose type does not match "std_logic_vector", the type of the target expression
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 4 warnings
+	Error: Peak virtual memory: 1014 megabytes
+	Error: Processing ended: Tue Mar 12 18:28:10 2019
+	Error: Elapsed time: 00:00:14
+	Error: Total CPU time (on all processors): 00:00:32
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 3 errors, 4 warnings
