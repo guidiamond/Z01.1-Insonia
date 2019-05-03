@@ -101,7 +101,8 @@ signal outRAM16: STD_LOGIC_VECTOR(15 downto 0);
 signal outREG16 : STD_LOGIC_VECTOR(15 downto 0);
 signal switch : STD_LOGIC_VECTOR(15 downto 0);
 signal nullDMUX: STD_LOGIC;
-signal nullMUX: STD_LOGIC_VECTOR(1 downto 0);
+signal nullMUX1: STD_LOGIC_VECTOR(15 downto 0);
+signal nullMUX2: STD_LOGIC_VECTOR(15 downto 0);
 
 begin
     DISPLAY: Screen port map (
@@ -142,8 +143,8 @@ begin
       sel => sel2,
       a => switch,
       b => outRAM16,
-      c => nullMUX(0),
-      d => nullMUX(1),
+      c => nullMUX1,
+      d => nullMUX2,
       q => OUTPUT
       );
 
@@ -156,7 +157,7 @@ begin
 
     sel1 <= "00" when ADDRESS(14 downto 0) <= "011111111111111" else
             "10" when ADDRESS(14 downto 0) <= "101001010111111" else
-            "01" when ADDRESS(14 downto 0) = "101001011000000"  else
+            "01" when ADDRESS(14 downto 0)  = "101001011000000"  else
             "11";
 
     sel2 <= "01" when ADDRESS(14 downto 0) <= "011111111111111" else
