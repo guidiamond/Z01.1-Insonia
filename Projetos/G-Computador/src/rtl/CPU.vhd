@@ -131,8 +131,6 @@ begin
 
 
 end architecture;
-library IEEE;
-use IEEE.STD_LOGIC_1164.all;
 
 entity CPU is
   port(
