@@ -1,4 +1,4 @@
-source "/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/common.do"
+source "/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/common.do"
 proc vunit_user_init {} {
     return 0
 }

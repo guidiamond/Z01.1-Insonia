@@ -40,11 +40,11 @@ proc _vunit_source_init_files_after_load {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_controlunit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true"} lib.tb_controlunit(tb)   -L vunit_lib -L lib}
+        eval vsim ${vsim_extra_args} {-modelsimini /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_controlunit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true"} lib.tb_controlunit(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_controlunit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true"} lib.tb_controlunit(tb)   -L vunit_lib -L lib' failed
+       echo Command 'vsim ${vsim_extra_args} -modelsimini /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini -wlf {/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_controlunit/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/,use_color : true"} lib.tb_controlunit(tb)   -L vunit_lib -L lib' failed
        echo Bad flag from vsim_extra_args?
        return true
     }
@@ -67,7 +67,7 @@ proc vunit_load {{vsim_extra_args ""}} {
 }
 
 proc is_test_suite_done {} {
-    set fd [open "/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/vunit_results" "r"]
+    set fd [open "/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/test_output/lib.tb_controlunit.all_a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/vunit_results" "r"]
     set contents [read $fd]
     close $fd
     set lines [split $contents "
@@ -107,10 +107,10 @@ proc _vunit_sim_restart {} {
 }
 
 proc vunit_compile {} {
-    set cmd_show {/usr/bin/python3 -u ./testeHW.py --compile}
+    set cmd_show {/usr/bin/python3 -u testeHW.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
-    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', './testeHW.py', '--compile'], cwd='/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+    set chan [open |[list {/usr/bin/python3} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['/usr/bin/python3', '-u', 'testeHW.py', '--compile'], cwd='/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
 
     while {[gets $chan line] >= 0} {
         puts $line
