@@ -1,8 +1,3 @@
-﻿-- Elementos de Sistemas
--- developed by Luciano Soares
--- file: CPU.vhd
--- date: 4/4/2017
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
@@ -37,7 +32,7 @@ architecture arch of CPU is
       nx:    in STD_LOGIC;
       zy:    in STD_LOGIC;
       ny:    in STD_LOGIC;
-      f:     in STD_LOGIC;
+      f:     in STD_LOGIC_VECTOR(1 downto 0);
       no:    in STD_LOGIC;
       zr:    out STD_LOGIC;
       ng:    out STD_LOGIC;
@@ -105,8 +100,10 @@ architecture arch of CPU is
   signal s_ALUout: STD_LOGIC_VECTOR(15 downto 0);
 
   signal s_pcout: STD_LOGIC_VECTOR(15 downto 0);
-
+  signal f2: STD_LOGIC_VECTOR(1 downto 0);
 begin
+   f2(0) <= c_f;
+   f2(1) <= '0';
    muxALUI: Mux16 port map(s_ALUout,instruction(15 downto 0),c_muxALUI_A,s_muxALUI_Aout);
    muxSD: Mux16 port map(s_regSout,s_regDout,c_muxSD_ALU,s_muxSDout);
    muxAMD: Mux16 port map(s_regDout,s_muxAM_out,c_muxAMD_ALU,s_muxAMD_ALUout);
@@ -116,7 +113,7 @@ begin
    RgS: Register16 port map(clock,s_ALUout,c_loadS,s_regSout);
    PC_port: PC port map(clock,'1',c_loadPC,reset,s_regAout,s_pcout);
    ALU_port: ALU port map(s_muxSDout,s_muxAMD_ALUout,c_zx,c_nx,c_zy,c_ny,
-                          c_f,c_no,c_zr,c_ng,s_ALUout);
+                          f2,c_no,c_zr,c_ng,s_ALUout);
    CU: ControlUnit port map (instruction,c_zr,c_ng,c_muxALUI_A,
                              c_muxAM,c_muxAMD_ALU,c_muxSD_ALU,c_zx,
                              c_nx,c_zy,c_ny,c_f,c_no,
