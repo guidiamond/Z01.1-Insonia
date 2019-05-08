@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador
+Z0 d/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador
 Eadd16
-Z1 w1555436019
+Z1 w1553253806
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
-Z6 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+Z5 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
+Z6 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd
 l0
 L12
 VNDgRTd3oIFAbIl]5BIA;93
 !s100 bCV;8C=RF[kET5Po^9P[=3
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1556125904
+Z8 !s110 1557335167
 !i10b 1
-Z9 !s108 1556125904.000000
-Z10 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
-Z11 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
+Z9 !s108 1557335167.000000
+Z10 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
+Z11 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Add16.vhd|
 !i113 1
 Z12 o-quiet -2008 -work lib
 Z13 tExplicit 1 CvgOpt 0
@@ -54,8 +54,8 @@ R1
 R3
 R4
 R0
-Z14 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
-Z15 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+Z14 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
+Z15 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd
 l0
 L29
 V6G0FnHZZmo3JikQnL7[7o3
@@ -65,8 +65,8 @@ R7
 R8
 !i10b 1
 R9
-Z16 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
-Z17 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
+Z16 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
+Z17 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/ALU.vhd|
 !i113 1
 R12
 R13
@@ -89,23 +89,23 @@ R17
 R12
 R13
 Eand16
-R1
+Z18 w1551974954
 R3
 R4
 R0
-Z18 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
-Z19 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+Z19 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
+Z20 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd
 l0
 L4
 Vh]ej`Ck73hG:Zd8Jo=jjc1
 !s100 4g2NdCHBc<J3K7jR5WC:B0
 R7
 33
-Z20 !s110 1556125905
+Z21 !s110 1557335168
 !i10b 1
-Z21 !s108 1556125905.000000
-Z22 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
-Z23 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
+Z22 !s108 1557335168.000000
+Z23 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
+Z24 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/And16.vhd|
 !i113 1
 R12
 R13
@@ -119,11 +119,11 @@ VB;Z8D73YL=hE6NEOm8QWT1
 !s100 f@[aNXGA9@KI^bSMDgU[j1
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
 R22
 R23
+R24
 !i113 1
 R12
 R13
@@ -132,19 +132,19 @@ R1
 R3
 R4
 R0
-Z24 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
-Z25 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
+Z25 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
+Z26 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd
 l0
 L4
 V5[h]I7=h]?dc4<<Vlg5T<0
 !s100 W]^JZCg1HIZ[U7cW:3Q^60
 R7
 33
-R20
-!i10b 1
 R21
-Z26 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd|
-Z27 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd|
+!i10b 1
+R22
+Z27 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd|
+Z28 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/BarrelShifter16.vhd|
 !i113 1
 R12
 R13
@@ -158,21 +158,21 @@ V1[PMM:9?32lO00aQF_CPl0
 !s100 3Jj53h]HgFLXAjUMhcmz80
 R7
 33
-R20
-!i10b 1
 R21
-R26
+!i10b 1
+R22
 R27
+R28
 !i113 1
 R12
 R13
 Ebinarydigit
-R1
+Z29 w1553537715
 R3
 R4
 R0
-Z28 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd
-Z29 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd
+Z30 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd
+Z31 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd
 l0
 L9
 VQ`A<cX8TI8ifEFCNm30R81
@@ -182,8 +182,8 @@ R7
 R8
 !i10b 1
 R9
-Z30 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd|
-Z31 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd|
+Z32 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd|
+Z33 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/BinaryDigit.vhd|
 !i113 1
 R12
 R13
@@ -200,8 +200,8 @@ R7
 R8
 !i10b 1
 R9
-R30
-R31
+R32
+R33
 !i113 1
 R12
 R13
@@ -210,8 +210,8 @@ R1
 R3
 R4
 R0
-Z32 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
-Z33 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+Z34 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
+Z35 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd
 l0
 L8
 VbbjmeK1BQ4Kb7jBbI77Rg2
@@ -221,8 +221,8 @@ R7
 R8
 !i10b 1
 R9
-Z34 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
-Z35 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
+Z36 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
+Z37 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/comparador16.vhd|
 !i113 1
 R12
 R13
@@ -239,30 +239,30 @@ R7
 R8
 !i10b 1
 R9
-R34
-R35
+R36
+R37
 !i113 1
 R12
 R13
 Ecomputador
-Z36 w1556479746
+Z38 w1556831145
 R2
 R3
 R4
 R0
-Z37 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
-Z38 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
+Z39 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
+Z40 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
 l0
 L17
 VSZG^an3cdHA?eJ8P11gfd3
 !s100 8V3@XFZg@jU66fkK;bXm=0
 R7
 33
-Z39 !s110 1556480034
+Z41 !s110 1557334675
 !i10b 1
-Z40 !s108 1556480034.000000
-Z41 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
-Z42 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
+Z42 !s108 1557334675.000000
+Z43 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
+Z44 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
 !i113 1
 R12
 R13
@@ -277,32 +277,32 @@ Vf1_bEDIn5lN4<>YTghV6^3
 !s100 _8A><o9=RWf1@D_<^1=L:0
 R7
 33
-R39
-!i10b 1
-R40
 R41
+!i10b 1
 R42
+R43
+R44
 !i113 1
 R12
 R13
 Econtrolunit
-Z43 w1556644875
+R38
 R3
 R4
 R0
-Z44 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
-Z45 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
+Z45 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
+Z46 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
 l0
 L11
 V`XA_h?lFA<aUVLf@iXm]o3
 !s100 R4Ad1m^@KSlhJPKXz2SS62
 R7
 33
-Z46 !s110 1556645108
+R41
 !i10b 1
-Z47 !s108 1556645108.000000
-Z48 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
-Z49 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
+R42
+Z47 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
+Z48 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
 !i113 1
 R12
 R13
@@ -316,71 +316,71 @@ VSCFiVLdRN2^Jk;VQaBz4d0
 !s100 cCOYG1aLEIXzmmFlCi<:S2
 R7
 33
-R46
+R41
 !i10b 1
+R42
 R47
 R48
-R49
 !i113 1
 R12
 R13
 Ecpu
-R36
+Z49 w1557335088
 R3
 R4
 R0
-Z50 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
-Z51 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
+Z50 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
+Z51 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
 l0
-L9
-VLNe:]zd:0GHFG?L9M:azJ0
-!s100 c7RNQ@bal?=>cRK1Je`fP2
+L4
+V`DOd@kUFZ5Nl5CG[z>UbX0
+!s100 8P7[zk>OPYN=Q4XbQoWD43
 R7
 33
-Z52 !s110 1556480035
+R8
 !i10b 1
-R40
-Z53 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
-Z54 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
+R9
+Z52 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
+Z53 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
 !i113 1
 R12
 R13
 Aarch
 R3
 R4
-DEx4 work 3 cpu 0 22 LNe:]zd:0GHFG?L9M:azJ0
-l110
-L22
-V:NU@1RRN4ih27e`TN?i8J2
-!s100 L`MDTB8JAL0[kZSk<O56C3
+DEx4 work 3 cpu 0 22 `DOd@kUFZ5Nl5CG[z>UbX0
+l104
+L17
+VU05R?z;0nYFfUaUGWh<9;1
+!s100 X6XkLTJIZie3hF8_UjIe_3
 R7
 33
-R52
+R8
 !i10b 1
-R40
+R9
+R52
 R53
-R54
 !i113 1
 R12
 R13
 Edmux2way
-R1
+Z54 w1552323216
 R3
 R4
 R0
-Z55 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
-Z56 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+Z55 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
+Z56 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd
 l0
 L4
 V>:IF]Koi99f<cJ0CmCAM51
 !s100 Mk4MPhHXoJhVbDN8OhUzJ0
 R7
 33
-R20
-!i10b 1
 R21
-Z57 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
-Z58 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
+!i10b 1
+R22
+Z57 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
+Z58 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux2Way.vhd|
 !i113 1
 R12
 R13
@@ -394,32 +394,32 @@ V^UWebBhlGj67=cZGJUE[21
 !s100 ID3:_5Pml]I@iE61gC2kL3
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R57
 R58
 !i113 1
 R12
 R13
 Edmux4way
-R1
+Z59 w1552404338
 R3
 R4
 R0
-Z59 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
-Z60 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+Z60 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
+Z61 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd
 l0
 L4
 VchCWhU[f@SDYOfM[z`KAD3
 !s100 ;Fe6?`C@SB@=WbZbaI^E^0
 R7
 33
-R20
-!i10b 1
 R21
-Z61 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
-Z62 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
+!i10b 1
+R22
+Z62 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
+Z63 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux4Way.vhd|
 !i113 1
 R12
 R13
@@ -433,32 +433,32 @@ VBUbP4LnRJlfeKEOVg=zjJ0
 !s100 LXCd`@X@9S?2IE5IC2Fg90
 R7
 33
-R20
-!i10b 1
 R21
-R61
+!i10b 1
+R22
 R62
+R63
 !i113 1
 R12
 R13
 Edmux8way
-R1
+R18
 R3
 R4
 R0
-Z63 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
-Z64 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+Z64 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
+Z65 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd
 l0
 L4
 V4@:^4]]>d5jd<9PRAJQi32
 !s100 zC5^AWzR72_D_1oKAO8`>2
 R7
 33
-R20
-!i10b 1
 R21
-Z65 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
-Z66 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
+!i10b 1
+R22
+Z66 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
+Z67 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/DMux8Way.vhd|
 !i113 1
 R12
 R13
@@ -472,21 +472,21 @@ VlPk3=aXN3BAozLd@9MK`d3
 !s100 N=IiC`4Y=R`YZRVIoWgzf1
 R7
 33
-R20
-!i10b 1
 R21
-R65
+!i10b 1
+R22
 R66
+R67
 !i113 1
 R12
 R13
 Eflipflopd
-R1
+R38
 R3
 R4
 R0
-Z67 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd
-Z68 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd
+Z68 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd
+Z69 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd
 l0
 L8
 VVA7hP7`fPQld]1Okh;Rb22
@@ -496,8 +496,8 @@ R7
 R8
 !i10b 1
 R9
-Z69 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd|
-Z70 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd|
+Z70 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd|
+Z71 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/FlipFlopD.vhd|
 !i113 1
 R12
 R13
@@ -514,18 +514,18 @@ R7
 R8
 !i10b 1
 R9
-R69
 R70
+R71
 !i113 1
 R12
 R13
 Efulladder
-R1
+Z72 w1552650669
 R3
 R4
 R0
-Z71 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
-Z72 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+Z73 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
+Z74 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd
 l0
 L10
 V;RB>US:oiVgf@@2;ERnEW2
@@ -535,8 +535,8 @@ R7
 R8
 !i10b 1
 R9
-Z73 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
-Z74 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
+Z75 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
+Z76 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/FullAdder.vhd|
 !i113 1
 R12
 R13
@@ -553,8 +553,8 @@ R7
 R8
 !i10b 1
 R9
-R73
-R74
+R75
+R76
 !i113 1
 R12
 R13
@@ -563,8 +563,8 @@ R1
 R3
 R4
 R0
-Z75 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
-Z76 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+Z77 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
+Z78 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd
 l0
 L10
 VL0]G_0fS9^WC^L]C@X[Y^0
@@ -574,8 +574,8 @@ R7
 R8
 !i10b 1
 R9
-Z77 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
-Z78 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
+Z79 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
+Z80 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/HalfAdder.vhd|
 !i113 1
 R12
 R13
@@ -592,8 +592,8 @@ R7
 R8
 !i10b 1
 R9
-R77
-R78
+R79
+R80
 !i113 1
 R12
 R13
@@ -602,8 +602,8 @@ R1
 R3
 R4
 R0
-Z79 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
-Z80 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+Z81 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
+Z82 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd
 l0
 L11
 VWBEFDPYG@DjdDNiB9;NN=3
@@ -613,8 +613,8 @@ R7
 R8
 !i10b 1
 R9
-Z81 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
-Z82 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
+Z83 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
+Z84 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/Inc16.vhd|
 !i113 1
 R12
 R13
@@ -631,18 +631,18 @@ R7
 R8
 !i10b 1
 R9
-R81
-R82
+R83
+R84
 !i113 1
 R12
 R13
 Einversor16
-R1
+R59
 R3
 R4
 R0
-Z83 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
-Z84 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+Z85 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
+Z86 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd
 l0
 L8
 VVkHiPDk`Ml2f_7V714<nn2
@@ -652,8 +652,8 @@ R7
 R8
 !i10b 1
 R9
-Z85 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
-Z86 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
+Z87 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
+Z88 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/inversor16.vhd|
 !i113 1
 R12
 R13
@@ -670,30 +670,30 @@ R7
 R8
 !i10b 1
 R9
-R85
-R86
+R87
+R88
 !i113 1
 R12
 R13
 Ememoryio
-Z87 w1556878484
+Z89 w1556881885
 R2
 R3
 R4
 R0
-Z88 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
-Z89 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
+Z90 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
+Z91 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
 l0
 L5
 VBSjd0aVVcIR=mZImHcXG92
 !s100 6WnUIeY1hdCbTcXChR4YY1
 R7
 33
-Z90 !s110 1556878528
+R41
 !i10b 1
-Z91 !s108 1556878528.000000
-Z92 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
-Z93 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
+R42
+Z92 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
+Z93 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
 !i113 1
 R12
 R13
@@ -708,9 +708,9 @@ Vc2i>dG>SC]mm[bUZl^J4=0
 !s100 nP5z>2[KMiALGdAgeLMnV0
 R7
 33
-R90
+R41
 !i10b 1
-R91
+R42
 R92
 R93
 !i113 1
@@ -721,19 +721,19 @@ R1
 R3
 R4
 R0
-Z94 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
-Z95 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+Z94 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
+Z95 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd
 l0
 L4
 V^KK7>>=?KzfHlc;dK>^H53
 !s100 IzGKQCSkQ7RCdJh>^j0Q61
 R7
 33
-R20
-!i10b 1
 R21
-Z96 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
-Z97 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
+!i10b 1
+R22
+Z96 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
+Z97 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux16.vhd|
 !i113 1
 R12
 R13
@@ -747,32 +747,32 @@ VPKASZlWc0NUm]TYNDkY9F1
 !s100 Q<HezFXFeOTgOn_eCOUcK1
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R96
 R97
 !i113 1
 R12
 R13
 Emux2way
-R1
+R18
 R3
 R4
 R0
-Z98 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
-Z99 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+Z98 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
+Z99 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd
 l0
 L4
 V5Md04iB]KYYIl:m:EPnQ[3
 !s100 L]VTV_?L9fN8g2_`K9nZQ2
 R7
 33
-R20
-!i10b 1
 R21
-Z100 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
-Z101 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
+!i10b 1
+R22
+Z100 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
+Z101 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux2Way.vhd|
 !i113 1
 R12
 R13
@@ -786,32 +786,32 @@ V5fWc1iQlfnCjUR;?<@_AQ1
 !s100 2=Z@=Jja]XVinHY3S1<7L0
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R100
 R101
 !i113 1
 R12
 R13
 Emux4way
-R1
+R59
 R3
 R4
 R0
-Z102 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
-Z103 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+Z102 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
+Z103 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd
 l0
 L4
 VS6DJa:23Uele:d0oQjjO[0
 !s100 X`n8^nYIhlnNgIfP_EkID1
 R7
 33
-R20
-!i10b 1
 R21
-Z104 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
-Z105 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
+!i10b 1
+R22
+Z104 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
+Z105 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way.vhd|
 !i113 1
 R12
 R13
@@ -825,9 +825,9 @@ VTJ^>zi3C=ANUjM=0RBNB61
 !s100 aNklN=VG<;@@H8oodf<>D3
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R104
 R105
 !i113 1
@@ -838,19 +838,19 @@ R1
 R3
 R4
 R0
-Z106 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
-Z107 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+Z106 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
+Z107 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd
 l0
 L4
 VgIliodZR>K=jaJZeHi]]@1
 !s100 8]mCOPe5cHg3o24Lz?cGK0
 R7
 33
-R20
-!i10b 1
 R21
-Z108 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
-Z109 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
+!i10b 1
+R22
+Z108 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
+Z109 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux4Way16.vhd|
 !i113 1
 R12
 R13
@@ -864,32 +864,32 @@ V;_zBCbz_22m=Uf<Ig7`:52
 !s100 6SIV]5M?XWJ8SnQIYW2][0
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R108
 R109
 !i113 1
 R12
 R13
 Emux8way
-R1
+R59
 R3
 R4
 R0
-Z110 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
-Z111 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+Z110 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
+Z111 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd
 l0
 L4
 VcMIZim^j_>0TGlG7NC03C3
 !s100 ^ag5`^MlkFaAfCaX]@3>L0
 R7
 33
-R20
-!i10b 1
 R21
-Z112 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
-Z113 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
+!i10b 1
+R22
+Z112 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
+Z113 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way.vhd|
 !i113 1
 R12
 R13
@@ -903,32 +903,32 @@ V>Y_1;molXNb:LHOPzNkb72
 !s100 IgbT;9^`O6<@VlE=7Td1j0
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R112
 R113
 !i113 1
 R12
 R13
 Emux8way16
-R1
+R18
 R3
 R4
 R0
-Z114 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
-Z115 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+Z114 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
+Z115 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd
 l0
 L4
 V7MWl=:zn]>Q>M5K]`_b<60
 !s100 @m115@68;o9gzO2VgfBG]0
 R7
 33
-R20
-!i10b 1
 R21
-Z116 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
-Z117 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
+!i10b 1
+R22
+Z116 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
+Z117 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Mux8Way16.vhd|
 !i113 1
 R12
 R13
@@ -942,32 +942,32 @@ VjQORmaAl99]?YYaKWPmTI2
 !s100 7DQjiWZM@2YDb;OKZA0n10
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R116
 R117
 !i113 1
 R12
 R13
 Enand_z01
-R1
+R59
 R3
 R4
 R0
-Z118 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
-Z119 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+Z118 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
+Z119 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd
 l0
 L4
 VMV:88zTBEe:UQ96>jlUfI0
 !s100 0d61a09AXn6n_X_jb>Bo?2
 R7
 33
-R20
-!i10b 1
 R21
-Z120 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
-Z121 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
+!i10b 1
+R22
+Z120 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
+Z121 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nand.vhd|
 !i113 1
 R12
 R13
@@ -981,32 +981,32 @@ VZAlTe3f<ahn1^zlB0;SXz0
 !s100 H2Gz]z_LY^;:`XA0neC8^0
 R7
 33
-R20
-!i10b 1
 R21
+!i10b 1
+R22
 R120
 R121
 !i113 1
 R12
 R13
 Enor8way
-R1
+Z122 w1551975175
 R3
 R4
 R0
-Z122 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
-Z123 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+Z123 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
+Z124 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd
 l0
 L4
 VI6@ZGJd>JSC7UGzNAn6GU2
 !s100 bzc2JH[>FOP2l:COLj<IY2
 R7
 33
-R20
+R21
 !i10b 1
-R9
-Z124 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
-Z125 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
+R22
+Z125 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
+Z126 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Nor8Way.vhd|
 !i113 1
 R12
 R13
@@ -1020,32 +1020,32 @@ V@P<Pa_Z1HnCIDR24n>Q:>1
 !s100 n1zZ6n^ehG8QonAg03aJB2
 R7
 33
-R20
+R21
 !i10b 1
-R9
-R124
+R22
 R125
+R126
 !i113 1
 R12
 R13
 Enot16
-R1
+R18
 R3
 R4
 R0
-Z126 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
-Z127 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+Z127 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
+Z128 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd
 l0
 L4
 VC]SG@M]l`d<egUIK]zP2?0
 !s100 fYJ1`YCnUZe9F?2KLeD4V3
 R7
 33
-R8
+R21
 !i10b 1
-R9
-Z128 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
-Z129 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
+R22
+Z129 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
+Z130 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Not16.vhd|
 !i113 1
 R12
 R13
@@ -1059,32 +1059,32 @@ VNDMDXUDiRUcjAZ;8GkjET3
 !s100 gJdZ^ZESPj]Cz`e=7;cNB2
 R7
 33
-R8
+R21
 !i10b 1
-R9
-R128
+R22
 R129
+R130
 !i113 1
 R12
 R13
 Eor16
-R1
+R18
 R3
 R4
 R0
-Z130 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
-Z131 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+Z131 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
+Z132 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd
 l0
 L4
 VFm015BPNjKE2P[ZaFANAP1
 !s100 >QKR87GJWMdVLQz<g8^hf0
 R7
 33
-R8
+R21
 !i10b 1
 R9
-Z132 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
-Z133 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
+Z133 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
+Z134 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or16.vhd|
 !i113 1
 R12
 R13
@@ -1098,21 +1098,21 @@ V_QY6bPoN>cgGNUJMg=KVP2
 !s100 4Z0<30]HA<D^f0kbNBKED3
 R7
 33
-R8
+R21
 !i10b 1
 R9
-R132
 R133
+R134
 !i113 1
 R12
 R13
 Eor8way
-R1
+R18
 R3
 R4
 R0
-Z134 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
-Z135 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+Z135 8/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
+Z136 F/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd
 l0
 L4
 V6_>9FK_U9`n7]^73i4MMa1
@@ -1122,8 +1122,8 @@ R7
 R8
 !i10b 1
 R9
-Z136 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
-Z137 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
+Z137 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
+Z138 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/C-LogicaCombinacional/src/rtl/Or8Way.vhd|
 !i113 1
 R12
 R13
@@ -1140,19 +1140,19 @@ R7
 R8
 !i10b 1
 R9
-R136
 R137
+R138
 !i113 1
 R12
 R13
 Epc
-R1
+R38
 R2
 R3
 R4
 R0
-Z138 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd
-Z139 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd
+Z139 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd
+Z140 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd
 l0
 L17
 V=n:LoI?i`<@RFkjLoz<f10
@@ -1162,8 +1162,8 @@ R7
 R8
 !i10b 1
 R9
-Z140 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd|
-Z141 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd|
+Z141 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd|
+Z142 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/PC.vhd|
 !i113 1
 R12
 R13
@@ -1181,59 +1181,59 @@ R7
 R8
 !i10b 1
 R9
-R140
 R141
+R142
 !i113 1
 R12
 R13
 Eram16k
-R36
-Z142 DPx9 altera_mf 20 altera_mf_components 0 22 Sn8Ol<dGSW99iM6NfOU>g1
+R38
+Z143 DPx9 altera_mf 20 altera_mf_components 0 22 Sn8Ol<dGSW99iM6NfOU>g1
 R3
 R4
 R0
-Z143 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
-Z144 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
+Z144 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
+Z145 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
 l0
 L43
 VN`5f9:fJeTOY0AH`AP8hV1
 !s100 Pe>;JD`:?:`O3@C?zeRZV0
 R7
 33
-Z145 !s110 1556880033
+R41
 !i10b 1
-Z146 !s108 1556880033.000000
-Z147 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
-Z148 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
+R42
+Z146 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
+Z147 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
 !i113 1
 R12
 R13
 Asyn
-R142
+R143
 R3
 R4
-Z149 DEx4 work 6 ram16k 0 22 N`5f9:fJeTOY0AH`AP8hV1
+DEx4 work 6 ram16k 0 22 N`5f9:fJeTOY0AH`AP8hV1
 l59
 L55
 VV9FceDTXeA;V<hf3O7]V?2
 !s100 QJHc_fGmkKUgE5kQgmH;e0
 R7
 33
-R145
+R41
 !i10b 1
+R42
 R146
 R147
-R148
 !i113 1
 R12
 R13
 Eram4k
-R1
+R38
 R3
 R4
 R0
-Z150 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd
-Z151 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd
+Z148 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd
+Z149 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd
 l0
 L8
 Vz8dhdjLKA6AlXRDQnUY4b0
@@ -1243,8 +1243,8 @@ R7
 R8
 !i10b 1
 R9
-Z152 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
-Z153 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
+Z150 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
+Z151 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram4K.vhd|
 !i113 1
 R12
 R13
@@ -1261,18 +1261,18 @@ R7
 R8
 !i10b 1
 R9
-R152
-R153
+R150
+R151
 !i113 1
 R12
 R13
 Eram512
-R1
+R38
 R3
 R4
 R0
-Z154 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
-Z155 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
+Z152 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
+Z153 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd
 l0
 L8
 V8[<08i[R4ikhzV`Li1VTh1
@@ -1282,8 +1282,8 @@ R7
 R8
 !i10b 1
 R9
-Z156 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
-Z157 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
+Z154 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
+Z155 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram512.vhd|
 !i113 1
 R12
 R13
@@ -1300,18 +1300,18 @@ R7
 R8
 !i10b 1
 R9
-R156
-R157
+R154
+R155
 !i113 1
 R12
 R13
 Eram64
-R1
+R38
 R3
 R4
 R0
-Z158 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
-Z159 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z156 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
+Z157 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd
 l0
 L8
 VHRL`C4[eJ50a:k2gb[ecM2
@@ -1321,8 +1321,8 @@ R7
 R8
 !i10b 1
 R9
-Z160 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
-Z161 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z158 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
+Z159 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram64.vhd|
 !i113 1
 R12
 R13
@@ -1339,18 +1339,18 @@ R7
 R8
 !i10b 1
 R9
-R160
-R161
+R158
+R159
 !i113 1
 R12
 R13
 Eram8
-R1
+R38
 R3
 R4
 R0
-Z162 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
-Z163 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z160 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
+Z161 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd
 l0
 L8
 VVj4LCZ8Lb8=jZ@YcZTX@g2
@@ -1360,8 +1360,8 @@ R7
 R8
 !i10b 1
 R9
-Z164 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
-Z165 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z162 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
+Z163 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Ram8.vhd|
 !i113 1
 R12
 R13
@@ -1378,18 +1378,18 @@ R7
 R8
 !i10b 1
 R9
-R164
-R165
+R162
+R163
 !i113 1
 R12
 R13
 Eregister16
-R1
+R38
 R3
 R4
 R0
-Z166 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
-Z167 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z164 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
+Z165 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd
 l0
 L8
 VLBR;A=e>>e_QSBKCXWa5d3
@@ -1399,8 +1399,8 @@ R7
 R8
 !i10b 1
 R9
-Z168 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
-Z169 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z166 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
+Z167 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register16.vhd|
 !i113 1
 R12
 R13
@@ -1417,18 +1417,18 @@ R7
 R8
 !i10b 1
 R9
-R168
-R169
+R166
+R167
 !i113 1
 R12
 R13
 Eregister32
-R1
+Z168 w1554124068
 R3
 R4
 R0
-Z170 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
-Z171 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z169 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
+Z170 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd
 l0
 L8
 VP]c@k:W8fWg]Xko[>MWb^1
@@ -1438,8 +1438,8 @@ R7
 R8
 !i10b 1
 R9
-Z172 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
-Z173 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z171 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
+Z172 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register32.vhd|
 !i113 1
 R12
 R13
@@ -1456,18 +1456,18 @@ R7
 R8
 !i10b 1
 R9
+R171
 R172
-R173
 !i113 1
 R12
 R13
 Eregister64
-R1
+R38
 R3
 R4
 R0
-Z174 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
-Z175 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z173 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
+Z174 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd
 l0
 L8
 V;LzQ2fOcY6f?Oc68WJCXG2
@@ -1477,8 +1477,8 @@ R7
 R8
 !i10b 1
 R9
-Z176 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
-Z177 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z175 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
+Z176 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register64.vhd|
 !i113 1
 R12
 R13
@@ -1495,18 +1495,18 @@ R7
 R8
 !i10b 1
 R9
+R175
 R176
-R177
 !i113 1
 R12
 R13
 Eregister8
-R1
+R38
 R3
 R4
 R0
-Z178 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
-Z179 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+Z177 8/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
+Z178 F/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd
 l0
 L8
 V9P<nc9YOOPP_Z`H4KFKkR3
@@ -1516,8 +1516,8 @@ R7
 R8
 !i10b 1
 R9
-Z180 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
-Z181 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
+Z179 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
+Z180 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/E-LogicaSequencial/src/rtl/Register8.vhd|
 !i113 1
 R12
 R13
@@ -1534,38 +1534,38 @@ R7
 R8
 !i10b 1
 R9
+R179
 R180
-R181
 !i113 1
 R12
 R13
 Escreen
-Z182 w1556879974
-Z183 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z184 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z181 w1557333630
+Z182 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z183 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
 R0
-Z185 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
-Z186 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
+Z184 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
+Z185 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
 l0
 L7
 VfCT2EVM@_W>M`I;TU3_m<2
 !s100 QI1MPGVz0LTl7ollmR;iT2
 R7
 33
-R145
+Z186 !s110 1557334882
 !i10b 1
-R146
-Z187 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
-Z188 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
+Z187 !s108 1557334882.000000
+Z188 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
+Z189 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
 !i113 1
 R12
 R13
 Alogic
+R182
 R183
-R184
 R2
 R3
 R4
@@ -1576,16 +1576,16 @@ VNkENQ9FcC7KgW5GV=2eAP3
 !s100 R80_hQdHa2:=2RHR;d6[C2
 R7
 33
-R145
+R186
 !i10b 1
-R146
 R187
 R188
+R189
 !i113 1
 R12
 R13
 Etb_controlunit
-Z189 w1556121175
+R38
 Z190 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
 Z191 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
 Z192 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
@@ -1623,19 +1623,19 @@ Z222 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 KNo?M3?g8Rc_m:IGUMQ<m0
 R3
 R4
 R0
-Z223 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
-Z224 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
+Z223 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
+Z224 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
 l0
 L12
 VNjcaXBJIW[@RBm9OF5_Re1
 !s100 4FH9YRLlA;SkTJ>X<caaF2
 R7
 33
-Z225 !s110 1556125908
+Z225 !s110 1557335170
 !i10b 1
-Z226 !s108 1556125908.000000
-Z227 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
-Z228 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
+Z226 !s108 1557335170.000000
+Z227 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
+Z228 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
 !i113 1
 R12
 R13
@@ -1692,7 +1692,7 @@ R228
 R12
 R13
 Etb_memoryio
-R189
+R38
 R190
 R191
 R192
@@ -1730,8 +1730,8 @@ R2
 R3
 R4
 R0
-Z229 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
-Z230 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
+Z229 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
+Z230 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
 l0
 L13
 VCiWC9U8=InI<m5l;n]f]c1
@@ -1741,8 +1741,8 @@ R7
 R225
 !i10b 1
 R226
-Z231 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
-Z232 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
+Z231 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
+Z232 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
 !i113 1
 R12
 R13
@@ -1803,8 +1803,8 @@ R1
 R3
 R4
 R0
-Z233 8/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
-Z234 F/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z233 8/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
+Z234 F/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd
 l0
 L8
 V:za`ndKWBd<?0f>U`=RlK1
@@ -1814,8 +1814,8 @@ R7
 R8
 !i10b 1
 R9
-Z235 !s90 -quiet|-modelsimini|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
-Z236 !s107 /home/borg/Documents/insper/elementos/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z235 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
+Z236 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/D-UnidadeLogicaAritmetica/src/rtl/zerador16.vhd|
 !i113 1
 R12
 R13
