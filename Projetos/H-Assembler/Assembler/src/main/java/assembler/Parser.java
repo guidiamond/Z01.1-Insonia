@@ -59,7 +59,7 @@ public class Parser {
      * @return a instrução atual para ser analilisada
      */
     public String command() {
-    	return null;
+    	return this.currentCommand;
     }
 
     /**
@@ -90,7 +90,16 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-    	return null;
+        if (commandType(command)==CommandType.A_COMMAND){
+            LinkedList<String> list = new LinkedList<>();
+            Collections.addAll(list, command.split(" "));
+            String symbol = list.get(1);
+            symbol = symbol.substring(0);
+            return symbol;
+        }
+        else{
+            return null;
+        }
     }
 
     /**
@@ -109,9 +118,7 @@ public class Parser {
      * @param  command instrução a ser analisada.
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
-    public String[] instruction(String command) {
-    	return null;
-    }
+    public String[] instruction(String command) { return null; }
 
     // fecha o arquivo de leitura
     public void close() throws IOException {
