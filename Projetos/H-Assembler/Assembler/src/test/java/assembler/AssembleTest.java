@@ -41,6 +41,7 @@ public class AssembleTest {
 
     @Test
     public void generateMachineCode() throws IOException {
+        SymbolTable table = assembler.fillSymbolTable();
         assembler.generateMachineCode();
         assembler.close();
         BufferedReader fileReader = new BufferedReader(new FileReader(outFile));
