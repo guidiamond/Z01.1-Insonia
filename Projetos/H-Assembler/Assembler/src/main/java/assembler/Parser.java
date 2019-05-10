@@ -49,9 +49,21 @@ public class Parser {
      * entrada o método retorna "Falso", senão retorna "Verdadeiro".
      * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
      */
-    public Boolean advance() {
+    public Boolean advance() throws IOException {
         // usar o fileReader.readLine();
-    	return null;
+        // String str = fileReader.readLine();
+        String str = fileReader.readLine();
+        while(str != null){
+               String[] lista = str.split(";");
+               this.currentCommand = lista[0];
+               this.currentCommand = this.currentCommand.trim();
+               if(!(this.currentCommand.startsWith(";")) && (this.currentCommand.length() > 0)){
+                   return true;
+               }
+               str = fileReader.readLine();
+        }
+        return false;
+
     }
 
     /**
@@ -59,7 +71,7 @@ public class Parser {
      * @return a instrução atual para ser analilisada
      */
     public String command() {
-    	return null;
+        return this.currentCommand;
     }
 
     /**
@@ -90,7 +102,18 @@ public class Parser {
      * @return somente o símbolo ou o valor número da instrução.
      */
     public String symbol(String command) {
-    	return null;
+        if (commandType(command)==CommandType.A_COMMAND){
+            LinkedList<String> list1 = new LinkedList<>();
+            Collections.addAll(list1, command.split(" "));
+            LinkedList<String> list2 = new LinkedList<>();
+            Collections.addAll(list2, list1.get(1).split(","));
+            String symbol = list2.get(0);
+            symbol = symbol.substring(1);
+            return symbol;
+        }
+        else{
+            return null;
+        }
     }
 
     /**
