@@ -15,5 +15,5 @@ sub 1 1000
 # conceito B
 
 isEven 2 1000
-#palindromo 2 1000
-#stringLength 2 2000
+palindromo 2 1000
+stringLength 2 2000
