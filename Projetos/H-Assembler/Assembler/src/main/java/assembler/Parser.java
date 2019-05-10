@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.LinkedList;
 
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
@@ -69,7 +71,16 @@ public class Parser {
      * @return o tipo da instrução.
      */
     public CommandType commandType(String command) {
-    	return null;
+
+        LinkedList<String> list = new LinkedList<>();
+        Collections.addAll(list, command.split(" "));
+        if(list.get(0).charAt(list.get(0).length()-1) == ':'){
+            return CommandType.L_COMMAND;
+        } else if(list.get(0).equals("leaw")){
+            return CommandType.A_COMMAND;
+        } else {
+            return CommandType.C_COMMAND;
+        }
     }
 
     /**
