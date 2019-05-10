@@ -22,7 +22,7 @@ entity Screen is
         LCD_D        : INOUT STD_LOGIC_VECTOR(15 downto 0);
         LCD_RD_N     : OUT   STD_LOGIC;
         LCD_RESET_N  : OUT   STD_LOGIC;
-        LCD_RS       : OUT   STD_LOGIC; -- (DCx) 0 : reg, 1: command
+        LCD_RS       : OUT   STD_LOGIC;	-- (DCx) 0 : reg, 1: command
         LCD_WR_N     : OUT   STD_LOGIC
        );
 end entity;
@@ -50,24 +50,24 @@ component ILI9341 is
         LCD_D        : INOUT STD_LOGIC_VECTOR(15 downto 0);
         LCD_RD_N     : OUT   STD_LOGIC;
         LCD_RESET_N  : OUT   STD_LOGIC;
-        LCD_RS       : OUT   STD_LOGIC; -- (DCx) 0 : reg, 1: command
+        LCD_RS       : OUT   STD_LOGIC;	-- (DCx) 0 : reg, 1: command
         LCD_WR_N     : OUT   STD_LOGIC
 
        );
 end component;
 
 component FIFO16x4096 IS
-  PORT
-  (
-    data  : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-    rdclk : IN STD_LOGIC ;
-    rdreq : IN STD_LOGIC ;
-    wrclk : IN STD_LOGIC ;
-    wrreq : IN STD_LOGIC ;
-    q   : OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
-    rdempty : OUT STD_LOGIC ;
-    wrfull  : OUT STD_LOGIC
-  );
+	PORT
+	(
+		data	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+		rdclk	: IN STD_LOGIC ;
+		rdreq	: IN STD_LOGIC ;
+		wrclk	: IN STD_LOGIC ;
+		wrreq	: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
+		rdempty	: OUT STD_LOGIC ;
+		wrfull	: OUT STD_LOGIC
+	);
 END component;
 
 SIGNAL PX_X     : UNSIGNED(15 downto 0) := x"0000"; -- pixel X (0..239)
@@ -76,7 +76,7 @@ SIGNAL PX_COLOR : STD_LOGIC_VECTOR(15 downto 0) := x"0000";
 SIGNAL PX_EN    : STD_LOGIC :='0';
 SIGNAL PX_RDY   : STD_LOGIC;
 SIGNAL INIT_OK  : STD_LOGIC;
-SIGNAL FLAG     : STD_LOGIC := '1';
+SIGNAL FLAG 	  : STD_LOGIC := '1';
 SIGNAL LOCKED   : STD_LOGIC; -- 0 not ok, 1 ok
 
 signal fifo_data   : std_logic_vector(31 downto 0);
