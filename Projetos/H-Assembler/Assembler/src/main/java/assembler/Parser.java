@@ -123,7 +123,12 @@ public class Parser {
      * @return o símbolo da instrução (sem os dois pontos).
      */
     public String label(String command) {
-    	return null;
+
+        if (commandType(command) == CommandType.L_COMMAND) {
+            command = command.replace(":", "");
+            return command;
+        }
+        return null;
     }
 
     /**
@@ -133,7 +138,9 @@ public class Parser {
      * @return um vetor de string contento os tokens da instrução (as partes do comando).
      */
     public String[] instruction(String command) {
-    	return null;
+        command = command.replace(","," ");
+        String[] array = command.split(" ");
+        return array;
     }
 
     // fecha o arquivo de leitura

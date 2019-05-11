@@ -19,7 +19,30 @@ public class SymbolTable {
      */
     public SymbolTable() {
         symbolTable = new HashMap<String, Integer>();
-
+        symbolTable.put("R0", 0);
+        symbolTable.put("R1", 1);
+        symbolTable.put("R2", 2);
+        symbolTable.put("R3", 3);
+        symbolTable.put("R4", 4);
+        symbolTable.put("R5", 5);
+        symbolTable.put("R6", 6);
+        symbolTable.put("R7", 7);
+        symbolTable.put("R8", 8);
+        symbolTable.put("R9", 9);
+        symbolTable.put("R10", 10);
+        symbolTable.put("R11", 11);
+        symbolTable.put("R12", 12);
+        symbolTable.put("R13", 13);
+        symbolTable.put("R14", 14);
+        symbolTable.put("R15", 15);
+        symbolTable.put("SP", 0);
+        symbolTable.put("LCL", 1);
+        symbolTable.put("ARG", 2);
+        symbolTable.put("THIS", 3);
+        symbolTable.put("THAT", 4);
+        symbolTable.put("SCREEN", 16384);
+        symbolTable.put("LED", 21184);
+        symbolTable.put("SW", 21185);
         // Inicializa tabela com valores padroes
         initialize();
     }
@@ -30,6 +53,7 @@ public class SymbolTable {
      * @param  address símbolo a ser armazenado na tabela de símbolos.
      */
     public void addEntry(String symbol, int address) {
+        symbolTable.put(symbol, address);
 
     }
 
@@ -39,7 +63,8 @@ public class SymbolTable {
      * @return Verdadeiro se símbolo está na tabela de símbolos, Falso se não está na tabela de símbolos.
      */
     public Boolean contains(String symbol){
-    	return false;
+    	Boolean bool = symbolTable.containsKey(symbol);
+        return bool;
     }
 
     /**
@@ -48,7 +73,8 @@ public class SymbolTable {
      * @return valor numérico associado ao símbolo procurado.
      */
     public Integer getAddress(String symbol) {
-    	return null;
+    	Integer address = symbolTable.get(symbol);
+        return address;
     }
 
     /**
