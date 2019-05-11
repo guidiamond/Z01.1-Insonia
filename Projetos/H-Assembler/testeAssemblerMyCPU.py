@@ -94,19 +94,15 @@ if __name__ == "__main__":
     mvn = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Assembler/')
     jar = pwd+"/Assembler/Z01-Assembler.jar"
 
-    genJAR(mvn)
-    r = report('', 'H', 'JAVA')
-    error = assemblerReport(r, mvn)
-    if error == 0:
-        erro, log = testeAssembly(jar=jar, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
-        print("\n-------------------------")
-        print("- Reportando resultado   ")
-        print("-------------------------")
-        r.nasm(log)
-    else:
-        print("\n--==== ERRO! ================================--")
-        print("[ERRO] Corrigir testes unitário antes de continuar"
+    print("----------------------------------------------------")
+    print("Só executar, após genJAR estiver passando sem erros!")
+    print("----------------------------------------------------")
 
+    erro, log = testeAssembly(jar=jar, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
+    print("\n-------------------------")
+    print("- Reportando resultado   ")
+    print("-------------------------")
+    r = report(log, 'H', 'NASM')
     r.send()
     print("\n--======== FIM ==========--")
     sys.exit(error)
