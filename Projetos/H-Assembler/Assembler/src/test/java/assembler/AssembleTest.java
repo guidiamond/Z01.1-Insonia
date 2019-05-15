@@ -26,7 +26,7 @@ public class AssembleTest {
     }
 
     @Test
-    public void fillSymbolTable() throws IOException, InvalidAssemblyException {
+    public void fillSymbolTable() throws IOException {
         // Cria tabela de símbolos
         SymbolTable table = assembler.fillSymbolTable();
         assertTrue("R1",table.contains("R1")==true);
