@@ -54,12 +54,21 @@ public class Parser {
         // String str = fileReader.readLine();
         String str = fileReader.readLine();
         while(str != null){
-               String[] lista = str.split(";");
-               this.currentCommand = lista[0];
-               this.currentCommand = this.currentCommand.trim();
-               if(!(this.currentCommand.startsWith(";")) && (this.currentCommand.length() > 0)){
-                   return true;
-               }
+            if(!str.equals("")){
+                String[] lista = str.split(";");
+                if(lista.length>0){
+
+
+                this.currentCommand = lista[0];
+                this.currentCommand = this.currentCommand.trim();
+                if(!(this.currentCommand.startsWith(";")) && (this.currentCommand.length() > 0)){
+                    return true;
+                }
+                }
+
+
+            }
+
                str = fileReader.readLine();
         }
         return false;
