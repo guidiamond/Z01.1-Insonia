@@ -10,7 +10,6 @@
 package assembler;
 
 import java.io.*;
-import java.util.*;
 
 /**
  * Faz a geração do código gerenciando os demais módulos
@@ -43,6 +42,7 @@ public class Assemble {
      * e atualiza a tabela de símbolos com os endereços.
      *
      * Dependencia : Parser, SymbolTable
+     * @return
      */
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
         int linha = 0;
@@ -71,6 +71,7 @@ public class Assemble {
                 }
             }
         }
+        return null;
     }
 
     /**
@@ -84,7 +85,7 @@ public class Assemble {
         Parser parser = new Parser(inputFile);
         String instruction = null;
         String primeiro_segundo_bit;
-        String destino, calc, jump, symbol, binario;
+        String dest, comp, jump, symbol, binario;
         /**
          * Aqui devemos varrer o código nasm linha a linha
          * e gerar a string 'instruction' para cada linha
@@ -96,18 +97,18 @@ public class Assemble {
                 case C_COMMAND:
                     primeiro_segundo_bit = "10";
                     jump = Code.jump(command);
-                    destino = Code.destino(command);
-                    calc = Code.calc(command);
-                    instruction = primeiro_segundo_bit + calc + destino + jump;
+                    dest = Code.dest(command);
+                    comp = Code.comp(command);
+                    instruction = primeiro_segundo_bit + comp + dest + jump;
                     break;
                 case A_COMMAND:
                     primeiro_segundo_bit = "00";
                     symbol = parser.symbol(parser.command());
                     if (table.contains(symbol)) {
                         int symbol_value = table.getAddress(symbol);
-                        binario = Code.toBinario(Integer.toString(symbol_value));
+                        binario = Code.toBinary(Integer.toString(symbol_value));
                     } else {
-                        binario = Code.toBinario(symbol);
+                        binario = Code.toBinary(symbol);
                     }
                     instruction = primeiro_segundo_bit + binario;
                     break;
