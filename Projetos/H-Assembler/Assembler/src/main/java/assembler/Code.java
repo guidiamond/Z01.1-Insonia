@@ -18,6 +18,7 @@ public class Code {
     public static String dest(String[] mnemnonic) {
 
 
+
     	return "";
     }
 
@@ -38,21 +39,24 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
-//        switch (mnemnonic[0]) {
-//            case "jmp" : return "111";
-//
-//            default : return "000";
-
-        if(mnemnonic[0].equals("jmp")) return "111";
-        else if(mnemnonic[0].equals("je")) return "010";
-        else if(mnemnonic[0].equals("jne")) return "101";
-        else if(mnemnonic[0].equals("jg")) return "001";
-        else if(mnemnonic[0].equals("jge")) return "011";
-        else if(mnemnonic[0].equals("jl")) return "100";
-        else if(mnemnonic[0].equals("jle")) return "110";
-        else if(mnemnonic[0].equals("nop")) return "000";
-        else return "000";
-
+        switch (mnemnonic[0]) {
+            case "jmp":
+                return "111";
+            case "jle":
+                return "110";
+            case "jne":
+                return "101";
+            case "jl":
+                return "100";
+            case "jge":
+                return "011";
+            case "je":
+                return "010";
+            case "jg":
+                return "001";
+            default:
+                return "000";
+        }
     }
 
     /**
