@@ -32,7 +32,7 @@ public class Assemble {
         inputFile  = inFile;
         hackFile   = new File(outFileHack);                      // Cria arquivo de saída .hack
         outHACK    = new PrintWriter(new FileWriter(hackFile));  // Cria saída do print para
-                                                                 // o arquivo hackfile
+        // o arquivo hackfile
         table      = new SymbolTable();                          // Cria e inicializa a tabela de simbolos
 
     }
@@ -45,12 +45,32 @@ public class Assemble {
      * Dependencia : Parser, SymbolTable
      */
     public SymbolTable fillSymbolTable() throws FileNotFoundException, IOException {
-        Parser parser = new Parser(inputFile);
-        while (parser.advance()){
-
+        int linha = 0;
+        Parser parsLabel = new Parser(inputFile);
+        while (parsLabel.advance()){
+            if (parsLabel.commandType(parsLabel.command()).equals(Parser.CommandType.L_COMMAND)){
+                String label = parsLabel.label(parsLabel.command());
+                if (!table.contains(label)){
+                    table.addEntry(label, linha);
+                }
+            }
+            else{
+                linha ++;
+            }
         }
-
-        return table;
+        int ramTemp = 16;
+        Parser parsSymbol = new Parser(inputFile);
+        while (parsSymbol.advance()){
+            if (parsSymbol.commandType(parsSymbol.command()).equals(Parser.CommandType.A_COMMAND)){
+                String symbol = parsSymbol.symbol(parsSymbol.command());
+                if (!(symbol.charAt(0)>47 && symbol.charAt(0)<58)){ //if not number
+                    if (!table.contains(symbol)){
+                        table.addEntry(symbol, ramTemp);
+                        ramTemp += 1;
+                    }
+                }
+            }
+        }
     }
 
     /**
@@ -61,28 +81,42 @@ public class Assemble {
      * Dependencias : Parser, Code
      */
     public void generateMachineCode() throws FileNotFoundException, IOException{
-        Parser parser = new Parser(inputFile);  // abre o arquivo e aponta para o começo
-        String instruction  = null;
-
+        Parser parser = new Parser(inputFile);
+        String instruction = null;
+        String primeiro_segundo_bit;
+        String destino, calc, jump, symbol, binario;
         /**
          * Aqui devemos varrer o código nasm linha a linha
          * e gerar a string 'instruction' para cada linha
          * de instrução válida do nasm
          */
-        while (parser.advance()){
-            switch (parser.commandType(parser.command())){
+        while (parser.advance()) {
+            String[] command = parser.instruction(parser.command());
+            switch (parser.commandType(parser.command())) {
                 case C_COMMAND:
+                    primeiro_segundo_bit = "10";
+                    jump = Code.jump(command);
+                    destino = Code.destino(command);
+                    calc = Code.calc(command);
+                    instruction = primeiro_segundo_bit + calc + destino + jump;
                     break;
                 case A_COMMAND:
+                    primeiro_segundo_bit = "00";
+                    symbol = parser.symbol(parser.command());
+                    if (table.contains(symbol)) {
+                        int symbol_value = table.getAddress(symbol);
+                        binario = Code.toBinario(Integer.toString(symbol_value));
+                    } else {
+                        binario = Code.toBinario(symbol);
+                    }
+                    instruction = primeiro_segundo_bit + binario;
                     break;
                 default:
                     continue;
             }
-            // Escreve no arquivo .hack a instrução
-            if(outHACK!=null) {
+            if (outHACK != null) {
                 outHACK.println(instruction);
             }
-            instruction = null;
         }
 
     }
