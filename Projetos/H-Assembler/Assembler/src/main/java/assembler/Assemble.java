@@ -71,7 +71,7 @@ public class Assemble {
                 }
             }
         }
-        return null;
+        return table;
     }
 
     /**

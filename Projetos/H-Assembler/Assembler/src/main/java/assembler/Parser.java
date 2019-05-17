@@ -97,7 +97,7 @@ public class Parser {
         Collections.addAll(list, command.split(" "));
         if(list.get(0).charAt(list.get(0).length()-1) == ':'){
             return CommandType.L_COMMAND;
-        } else if(list.get(0).equals("leaw")){
+        } else if(list.contains("leaw")){
             return CommandType.A_COMMAND;
         } else {
             return CommandType.C_COMMAND;
@@ -148,6 +148,7 @@ public class Parser {
      */
     public String[] instruction(String command) {
         command = command.replace(","," ");
+        command = command.replace("  "," ");
         String[] array = command.split(" ");
         return array;
     }
