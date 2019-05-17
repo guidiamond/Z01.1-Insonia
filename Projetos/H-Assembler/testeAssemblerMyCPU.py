@@ -105,4 +105,4 @@ if __name__ == "__main__":
     r = report(log, 'H', 'NASM')
     r.send()
     print("\n--======== FIM ==========--")
-    sys.exit(error)
+    sys.exit(erro)
