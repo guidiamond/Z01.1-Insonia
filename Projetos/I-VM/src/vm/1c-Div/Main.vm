@@ -1,0 +1,21 @@
+// ---------------------------------  
+// Rafael Corsi @ insper . edu . br
+//              2018a
+// ---------------------------------
+//
+// Projeto      : Projeto I-VM
+// File         : add1.vm
+//
+// Descritivo   : 
+//  Divide 15 / 5 e salva o resultado em temp 0
+//
+// ----------------------------------
+
+function Main.main 0
+
+
+// esse loop sempre deve existir!
+// caso contrario o computador vai
+// executar lixo de memoria.
+label while
+  goto while
