@@ -169,6 +169,7 @@ public class CodeTest  {
 			assertTrue("jge %D",Code.comp(new String[] {"jge", "%D"}).equals("000001100"));
 			assertTrue("jl %S",Code.comp(new String[] {"jl", "%S"}).equals("001001100"));
 			assertTrue("jle %S",Code.comp(new String[] {"jle", "%S"}).equals("001001100"));
+
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
