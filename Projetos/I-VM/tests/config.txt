@@ -1,39 +1,4 @@
-##--------------------
-## EXMPLOS: /srcExamples
-##  - funcoes aritmeticas
-##  - push/pop
-##  - parser
-##--------------------
-SimplePushConst 1 300
-SimplePushLocal 1 300
-SimplePushTemp 1 300
-SimplePushThat 1 300
-SimplePushThis 1 300
-
-SimplePopLocal 1 300
-SimplePopPointer 1 300
-SimplePopTemp 1 300
-SimplePopThat 1 300
-SimplePopThis 1 300
-
-SimpleAdd 1 300
-SimpleAnd 1 300
-SimpleNeg 1 300
-SimpleOr 1 300
-SimpleSub 1 300
-
-SimplePushAdd 1 300
-SimplePushArg 1 300
-
-SimpleEq 3 300
-SimpleGoto 1 300
-SimpleGt 3 300
-SimpleIfGoto 1 300
-SimpleLt 1 300
-
-StackTest 1 3000
-StaticsTest 1 3000
-SimpleFunction 1 300
+# Testa infra
 Mult 1 4000
 
 ##--------------------
@@ -47,4 +12,45 @@ Mult 1 4000
 2b-Calculadora 1 4000
 2c-Calculadora 1 4000
 2d-Calculadora 1 4000
+
+
+###--------------------
+### EXMPLOS: /srcExamples
+###  - funcoes aritmeticas
+###  - push/pop
+###  - parser
+###--------------------
+#SimplePushConst 1 300
+#SimplePushLocal 1 300
+#SimplePushTemp 1 300
+#SimplePushThat 1 300
+#SimplePushThis 1 300
+#
+#SimplePopLocal 1 300
+#SimplePopPointer 1 300
+#SimplePopTemp 1 300
+#SimplePopThat 1 300
+#SimplePopThis 1 300
+#
+#SimpleAdd 1 300
+#SimpleAnd 1 300
+#SimpleNeg 1 300
+#SimpleOr 1 300
+#SimpleSub 1 300
+#
+#SimplePushAdd 1 300
+#SimplePushArg 1 300
+#
+#SimpleEq 3 300
+#SimpleGoto 1 300
+#SimpleGt 3 300
+#SimpleIfGoto 1 300
+#SimpleLt 1 300
+#
+#StackTest 1 3000
+#StaticsTest 1 3000
+#SimpleFunction 1 300
+#Mult 1 4000
+
+
 
