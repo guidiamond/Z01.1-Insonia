@@ -13,20 +13,29 @@ sys.path.insert(0, ROOT_PATH + '/Projetos/Z01-tools/scripts/')
 
 from config import *
 from assembler import assemblerAll, clearbin
-from vmtranslator import vmtranslator
+from vmtranslator import vmtranslator, vmtranslatorFromTestDir
 from compileVM import compileVM
 from simulateCPU import simulateFromTestDir
 from testeAssembly import compareRam, compareFromTestDir, clearTestDir
 
 def testeVM(jarAssembler, jarVM, testDir, vmDir, nasmDir, hackDir, gui, verbose):
 
-    compileVM(False, jarVM)
+    clearbin(nasmDir)
+    clearbin(hackDir)
+
+
+    print("------------------------------")
+    print("- Translating src files       ")
+    print("- to I-VMTranslator/bin/nasm/ ")
+    print("------------------------------")
+    compileVM(False, jarVM, vmDir+'vm/', nasmDir)
+    compileVM(False, jarVM, vmDir+'vmExamples/', nasmDir)
 
     # montador
     print("-------------------------")
     print("- Assembling files .... " )
     print("-------------------------")
-    assemblerAll(jarAssembler, nasm, hack, True)
+    assemblerFromTestDir(jarAssembler, testDir, nasmDir, hackDir)
 
     # simulando
     print("-------------------------")
@@ -59,7 +68,7 @@ if __name__ == "__main__":
 
     pwd = os.path.dirname(os.path.abspath(__file__))
     testDir = pwd+"/tests/"
-    vmDir = pwd+"/src/vm/"
+    vmDir = pwd+"/src/"
     nasm = pwd+"/bin/nasm/"
     hack = pwd+"/bin/hack/"
 

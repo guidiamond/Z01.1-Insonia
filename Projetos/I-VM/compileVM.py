@@ -14,24 +14,7 @@ sys.path.insert(0, ROOT_PATH + '/Projetos/Z01-tools/scripts/')
 from config import *
 from vmtranslator import vmtranslator
 
-def compileVM(bootstrap, jar):
-
-    pwd = os.path.dirname(os.path.abspath(__file__))
-    vmDir = pwd+"/src/vm/"
-    vmExDir = pwd+"/src/vmExamples/"
-    nasmDir = pwd+"/bin/nasm/"
-
-    # compila
-    print("------------------------------")
-    print("- Translating Examples files  ")
-    print("- to I-VMTranslator/bin/nasm/ ")
-    print("------------------------------")
-    vmtranslator(bootstrap, vmExDir, nasmDir, jar=jar)
-
-    print("------------------------------")
-    print("- Translating src files       ")
-    print("- to I-VMTranslator/bin/nasm/ ")
-    print("------------------------------")
+def compileVM(bootstrap, jar, vmDir, nasmDir):
     vmtranslator(bootstrap, vmDir, nasmDir, jar=jar)
 
 if __name__ == "__main__":
@@ -44,5 +27,10 @@ if __name__ == "__main__":
     else:
         bs = False
 
+    pwd = os.path.dirname(os.path.abspath(__file__))
+    vmDir = pwd+"/src/vm/"
+    vmExDir = pwd+"/src/vmExamples/"
+    nasmDir = pwd+"/bin/nasm/"
     jar = os.path.abspath(VMTRANSLATOR_JAR)
-    compileVM(bootstrap=bs, jar=jar)
+    compileVM(bs, jar, vmDir, nasmDir)
+    compileVM(bs, jar, vmExDir, nasmDir)
