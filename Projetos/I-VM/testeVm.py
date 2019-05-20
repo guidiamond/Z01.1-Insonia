@@ -23,13 +23,12 @@ def testeVM(jarAssembler, jarVM, testDir, vmDir, nasmDir, hackDir, gui, verbose)
     clearbin(nasmDir)
     clearbin(hackDir)
 
-
     print("------------------------------")
     print("- Translating src files       ")
     print("- to I-VMTranslator/bin/nasm/ ")
     print("------------------------------")
     compileVM(False, jarVM, vmDir+'vm/', nasmDir)
-    compileVM(False, jarVM, vmDir+'vmExamples/', nasmDir)
+#    compileVM(False, jarVM, vmDir+'vmExamples/', nasmDir)
 
     # montador
     print("-------------------------")
