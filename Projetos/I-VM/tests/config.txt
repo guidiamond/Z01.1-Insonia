@@ -2,14 +2,13 @@
 ## Entrega 
 ##--------------------
 
-#1a-Add 1 400
-#1b-Add 1 400
-#1c-Div 1 4000
-#2a-Calculadora 1 4000
+1a-Add 1 400
+1b-Add 1 400
+1c-Div 1 4000
+2a-Calculadora 1 4000
 2b-Calculadora 1 4000
-#2c-Calculadora 1 4000
-#2d-Calculadora 1 4000
-
+2c-Calculadora 1 4000
+2d-Calculadora 1 4000
 
 ###--------------------
 ### EXMPLOS: /srcExamples
