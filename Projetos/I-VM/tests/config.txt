@@ -1,38 +1,52 @@
-#--------------------
-# EXMPLOS: /src/vmExamples
-#  - funcoes aritmeticas
-#  - push/pop
-#  - parser
-#--------------------
+##--------------------
+## Entrega 
+##--------------------
 
-SimpleAdd 1 200
-SimpleNeg 1 200
-SimpleSub 1 200
-SimpleEq 3 200
-SimpleGt 3 200
-SimpleLt 3 200
-SimpleAnd 1 200
-SimpleOr 1 200
-SimplePushConst 1 200
-SimplePushAdd 1 200
-StackTest 1 4000
-
-#--------------------
-# Entrega
-# /src/vmExamples
-# call, funcoes, goto,
-# label   
-#--------------------
-
-BasicLoop 1 4000
-SimpleFunction 1 500
-StaticsTest 1 5000
-Mult 1 1000
-#1a-Add 1 500
-#1b-Add 1 500
-2a-Calculadora 1 500
-2b-Calculadora 1 5000
+1a-Add 1 400
+1b-Add 1 400
+1c-Div 1 4000
+2a-Calculadora 1 4000
+2b-Calculadora 1 4000
 2c-Calculadora 1 4000
 2d-Calculadora 1 4000
-SimpleGoto 1 200
-SimpleIfGoto 1 200
+
+###--------------------
+### EXMPLOS: /srcExamples
+###  - funcoes aritmeticas
+###  - push/pop
+###  - parser
+###--------------------
+#SimplePushConst 1 300
+#SimplePushLocal 1 300
+#SimplePushTemp 1 300
+#SimplePushThat 1 300
+#SimplePushThis 1 300
+#
+#SimplePopLocal 1 300
+#SimplePopPointer 1 300
+#SimplePopTemp 1 300
+#SimplePopThat 1 300
+#SimplePopThis 1 300
+#
+#SimpleAdd 1 300
+#SimpleAnd 1 300
+#SimpleNeg 1 300
+#SimpleOr 1 300
+#SimpleSub 1 300
+#
+#SimplePushAdd 1 300
+#SimplePushArg 1 300
+#
+#SimpleEq 3 300
+#SimpleGoto 1 300
+#SimpleGt 3 300
+#SimpleIfGoto 1 300
+#SimpleLt 1 300
+#
+#StackTest 1 3000
+#StaticsTest 1 3000
+#SimpleFunction 1 300
+#Mult 1 4000
+
+
+
