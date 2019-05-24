@@ -1,4 +1,4 @@
-﻿-- Elementos de Sistemas
+-- Elementos de Sistemas
 -- developed by Luciano Soares
 -- file: CPU.vhd
 -- date: 4/4/2017
@@ -144,7 +144,7 @@ architecture arch of CPU is
       nx:    in STD_LOGIC;
       zy:    in STD_LOGIC;
       ny:    in STD_LOGIC;
-      f:     in STD_LOGIC;
+      f:     in STD_LOGIC_VECTOR(1 downto 0);
       no:    in STD_LOGIC;
       zr:    out STD_LOGIC;
       ng:    out STD_LOGIC;
@@ -193,7 +193,7 @@ architecture arch of CPU is
   signal c_nx: STD_LOGIC;
   signal c_zy: STD_LOGIC;
   signal c_ny: STD_LOGIC;
-  signal c_f: STD_LOGIC;
+  signal c_f: STD_LOGIC_VECTOR(1 downto 0);
   signal c_no: STD_LOGIC;
   signal c_loadA: STD_LOGIC;
   signal c_loadD: STD_LOGIC;
@@ -227,7 +227,7 @@ begin
                           c_f,c_no,c_zr,c_ng,s_ALUout);
    CU: ControlUnit port map (instruction,c_zr,c_ng,c_muxALUI_A,
                              c_muxAM,c_muxAMD_ALU,c_muxSD_ALU,c_zx,
-                             c_nx,c_zy,c_ny,c_f,c_no,
+                             c_nx,c_zy,c_ny,c_f(0),c_no,
                              c_loadA,c_loadD,c_loadS,
                              writeM,c_loadPC);
    

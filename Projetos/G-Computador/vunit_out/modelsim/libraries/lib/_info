@@ -9,67 +9,67 @@ z2
 cModel Technology
 Z0 d/home/borg/Z01.1-Insonia/Projetos/G-Computador
 Ecomputador
-Z1 w1556886831
+Z1 w1558058510
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z5 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
-Z6 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
+Z5 d/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador
+Z6 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
+Z7 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd
 l0
 L17
 VSZG^an3cdHA?eJ8P11gfd3
 !s100 8V3@XFZg@jU66fkK;bXm=0
-Z7 OV;C;10.5b;63
+Z8 OV;C;10.5b;63
 33
-Z8 !s110 1556886947
+Z9 !s110 1558697763
 !i10b 1
-Z9 !s108 1556886947.000000
-Z10 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
-Z11 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
+Z10 !s108 1558697763.000000
+Z11 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
+Z12 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Computador.vhd|
 !i113 1
-Z12 o-quiet -2008 -work lib
-Z13 tExplicit 1 CvgOpt 0
+Z13 o-quiet -2008 -work lib
+Z14 tExplicit 1 CvgOpt 0
 Alogic
 R2
 R3
 R4
-Z14 DEx4 work 10 computador 0 22 SZG^an3cdHA?eJ8P11gfd3
+DEx4 work 10 computador 0 22 SZG^an3cdHA?eJ8P11gfd3
 l121
 L42
-Z15 Vf1_bEDIn5lN4<>YTghV6^3
-Z16 !s100 _8A><o9=RWf1@D_<^1=L:0
-R7
-33
+Vf1_bEDIn5lN4<>YTghV6^3
+!s100 _8A><o9=RWf1@D_<^1=L:0
 R8
-!i10b 1
+33
 R9
+!i10b 1
 R10
 R11
-!i113 1
 R12
+!i113 1
 R13
+R14
 Econtrolunit
-Z17 w1556884442
+Z15 w1556884442
 R3
 R4
 R0
-Z18 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
-Z19 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
+Z16 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
+Z17 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd
 l0
 L11
 V`XA_h?lFA<aUVLf@iXm]o3
 !s100 R4Ad1m^@KSlhJPKXz2SS62
-R7
+R8
 33
-Z20 !s110 1556886893
+Z18 !s110 1556886893
 !i10b 1
-Z21 !s108 1556886893.000000
-Z22 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
-Z23 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
+Z19 !s108 1556886893.000000
+Z20 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
+Z21 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/ControlUnit.vhd|
 !i113 1
-R12
 R13
+R14
 Aarch
 R3
 R4
@@ -78,38 +78,77 @@ l26
 L25
 VSCFiVLdRN2^Jk;VQaBz4d0
 !s100 cCOYG1aLEIXzmmFlCi<:S2
-R7
+R8
 33
-R20
+R18
 !i10b 1
+R19
+R20
 R21
-R22
-R23
 !i113 1
-R12
 R13
+R14
+Ecpu
+Z22 w1558699505
+R3
+R4
+R5
+Z23 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
+Z24 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd
+l0
+L116
+VLk9g_@lJUBf;9zV4W4>iG0
+!s100 8]7S63QPRIG<`jmQ?niRZ1
+R8
+33
+Z25 !s110 1558699641
+!i10b 1
+Z26 !s108 1558699641.000000
+Z27 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
+Z28 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/CPU.vhd|
+!i113 1
+R13
+R14
+Aarch
+R3
+R4
+DEx4 work 3 cpu 0 22 Lk9g_@lJUBf;9zV4W4>iG0
+l217
+L129
+V_5;Tf5OHWTBB_YZ;@Y_k11
+!s100 ^B>2AXnefHTlW265<lR>83
+R8
+33
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R13
+R14
 Ememoryio
-R17
+R15
 R2
 R3
 R4
 R0
-Z24 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
-Z25 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
+Z29 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
+Z30 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd
 l0
 L5
 VBSjd0aVVcIR=mZImHcXG92
 !s100 6WnUIeY1hdCbTcXChR4YY1
-R7
+R8
 33
-R20
+R18
 !i10b 1
-R21
-Z26 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
-Z27 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
+R19
+Z31 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
+Z32 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/MemoryIO.vhd|
 !i113 1
-R12
 R13
+R14
 Alogic
 R2
 R3
@@ -119,40 +158,40 @@ l107
 L36
 Vc2i>dG>SC]mm[bUZl^J4=0
 !s100 nP5z>2[KMiALGdAgeLMnV0
-R7
+R8
 33
-R20
+R18
 !i10b 1
-R21
-R26
-R27
+R19
+R31
+R32
 !i113 1
-R12
 R13
+R14
 Eram16k
-R17
-Z28 DPx9 altera_mf 20 altera_mf_components 0 22 Sn8Ol<dGSW99iM6NfOU>g1
+R15
+Z33 DPx9 altera_mf 20 altera_mf_components 0 22 Sn8Ol<dGSW99iM6NfOU>g1
 R3
 R4
 R0
-Z29 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
-Z30 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
+Z34 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
+Z35 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho
 l0
 L43
 VN`5f9:fJeTOY0AH`AP8hV1
 !s100 Pe>;JD`:?:`O3@C?zeRZV0
-R7
+R8
 33
-R20
+R18
 !i10b 1
-R21
-Z31 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
-Z32 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
+R19
+Z36 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
+Z37 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/RAM/RAM16K.vho|
 !i113 1
-R12
 R13
+R14
 Asyn
-R28
+R33
 R3
 R4
 DEx4 work 6 ram16k 0 22 N`5f9:fJeTOY0AH`AP8hV1
@@ -160,43 +199,43 @@ l59
 L55
 VV9FceDTXeA;V<hf3O7]V?2
 !s100 QJHc_fGmkKUgE5kQgmH;e0
-R7
+R8
 33
-R20
+R18
 !i10b 1
-R21
-R31
-R32
+R19
+R36
+R37
 !i113 1
-R12
 R13
+R14
 Escreen
-R17
-Z33 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z34 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R1
+Z38 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z39 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R2
 R3
 R4
-R0
-Z35 8/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
-Z36 F/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
+R5
+Z40 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
+Z41 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho
 l0
 L7
 VfCT2EVM@_W>M`I;TU3_m<2
 !s100 QI1MPGVz0LTl7ollmR;iT2
-R7
+R8
 33
-R20
+R9
 !i10b 1
-R21
-Z37 !s90 -quiet|-modelsimini|/home/borg/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
-Z38 !s107 /home/borg/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
+R10
+Z42 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
+Z43 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/src/rtl/Dispositivos/Screen/Screen.vho|
 !i113 1
-R12
 R13
+R14
 Alogic
-R33
-R34
+R38
+R39
 R2
 R3
 R4
@@ -205,13 +244,227 @@ l93
 L31
 VNkENQ9FcC7KgW5GV=2eAP3
 !s100 R80_hQdHa2:=2RHR;d6[C2
-R7
+R8
 33
-R20
+R9
 !i10b 1
-R21
-R37
-R38
+R10
+R42
+R43
 !i113 1
-R12
 R13
+R14
+Etb_controlunit
+R1
+Z44 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z45 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z46 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z47 DPx9 vunit_lib 7 run_pkg 0 22 ?ilEX`>N>LaongBVTRfDn1
+Z48 DPx9 vunit_lib 13 run_types_pkg 0 22 ]8KoceJmoGz<@LgQaN5R62
+Z49 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z50 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z51 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z52 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z53 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z54 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z55 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z56 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z57 DPx9 vunit_lib 15 log_handler_pkg 0 22 nl_I;6SFb6@cB[0oB[Gm?1
+Z58 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z59 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z60 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z61 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z62 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z63 D^#x9 vunit_lib 18 data_types_context 0 22 1?>9FT=3YA15`7IYa:H9b2
+Z64 DPx9 vunit_lib 8 dict_pkg 0 22 ehbf8zR4VgoO:66`0b==c3
+Z65 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 I^`873Q>JaL`RoU3I`C2H1
+Z66 DPx9 vunit_lib 14 queue_pool_pkg 0 22 Z[=D0HJacYBCm0dE3aodk1
+Z67 DPx9 vunit_lib 17 integer_array_pkg 0 22 CJcNR>m;3A:?0bl`^YYN^0
+Z68 DPx9 vunit_lib 14 string_ptr_pkg 0 22 BcAU_Z][LeU1aR2CQKdF;1
+Z69 DPx9 vunit_lib 9 queue_pkg 0 22 ;89lc5:Q?7a@<EYe0_F1m0
+Z70 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 >4MC1]6h[egYG8GmK_OaU3
+Z71 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+R2
+Z72 DPx4 ieee 11 numeric_bit 0 22 d<O?S;AIQfOzoHU3FDK]23
+Z73 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z74 DPx4 ieee 12 math_complex 0 22 5i:;_e<WQ2;?b7>BdkGQL0
+Z75 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z76 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 KNo?M3?g8Rc_m:IGUMQ<m0
+R3
+R4
+R5
+Z77 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
+Z78 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd
+l0
+L12
+VNjcaXBJIW[@RBm9OF5_Re1
+!s100 4FH9YRLlA;SkTJ>X<caaF2
+R8
+33
+Z79 !s110 1558699643
+!i10b 1
+Z80 !s108 1558699643.000000
+Z81 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
+Z82 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_ControlUnit.vhd|
+!i113 1
+R13
+R14
+Atb
+R44
+R45
+R46
+R47
+R48
+R49
+R50
+R51
+R52
+R53
+R54
+R55
+R56
+R57
+R58
+R59
+R60
+R61
+R62
+R63
+R64
+R65
+R66
+R67
+R68
+R69
+R70
+R71
+R2
+R72
+R73
+R74
+R75
+R76
+R3
+R4
+DEx4 work 14 tb_controlunit 0 22 NjcaXBJIW[@RBm9OF5_Re1
+l42
+L16
+VSZ[D1GhUQBPbgMZMS]HGH0
+!s100 ojfjA1E4CejeLo823M>5I3
+R8
+33
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 1
+R13
+R14
+Etb_memoryio
+R1
+R44
+R45
+R46
+R47
+R48
+R49
+R50
+R51
+R52
+R53
+R54
+R55
+R56
+R57
+R58
+R59
+R60
+R61
+R62
+R63
+R64
+R65
+R66
+R67
+R68
+R69
+R70
+R71
+R72
+R73
+R74
+R75
+R76
+R2
+R3
+R4
+R5
+Z83 8/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
+Z84 F/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd
+l0
+L13
+VCiWC9U8=InI<m5l;n]f]c1
+!s100 hQ3P]^Ea46fOIHW=;JW:Q1
+R8
+33
+R79
+!i10b 1
+R80
+Z85 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
+Z86 !s107 /home/borg/Documents/Z01.1-Insonia/Projetos/G-Computador/tests/vhd/tb_MemoryIO.vhd|
+!i113 1
+R13
+R14
+Atb
+R44
+R45
+R46
+R47
+R48
+R49
+R50
+R51
+R52
+R53
+R54
+R55
+R56
+R57
+R58
+R59
+R60
+R61
+R62
+R63
+R64
+R65
+R66
+R67
+R68
+R69
+R70
+R71
+R72
+R73
+R74
+R75
+R76
+R2
+R3
+R4
+DEx4 work 11 tb_memoryio 0 22 CiWC9U8=InI<m5l;n]f]c1
+l58
+L17
+VHfMHUWB]13=SMZ[K>G:>Y0
+!s100 SaR^MDTbF[<lD?TdVV8HR1
+R8
+33
+R79
+!i10b 1
+R80
+R85
+R86
+!i113 1
+R13
+R14
