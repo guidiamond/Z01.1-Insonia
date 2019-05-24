@@ -16,7 +16,7 @@
 //  Para isso, crie uma funcao div que realiza a divisao
 //  entre o primeiro e o segundo valor da pilha
 //
-//  Use a funcao de mult como exemplo
+//  Use a funcao de mult como exemplo e sua funcao div que foi criada
 //
 //  ****************************************************
 //  ** A ideia é deixar o Z01 resolver, você não deve **
@@ -24,6 +24,11 @@
 //  ****************************************************
 
 function Main.main 0
+
+push constant 15
+push constant 5
+call div 2
+pop temp 1
 
 label while
     goto while

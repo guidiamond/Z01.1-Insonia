@@ -17,6 +17,7 @@ from vmtranslator import vmtranslator, vmtranslatorFromTestDir
 from compileVM import compileVM
 from simulateCPU import simulateFromTestDir
 from testeAssembly import compareRam, compareFromTestDir, clearTestDir
+from genJAR import genJAR
 
 def testeVM(jarAssembler, jarVM, testDir, vmDir, nasmDir, hackDir, gui, verbose):
 
@@ -28,7 +29,7 @@ def testeVM(jarAssembler, jarVM, testDir, vmDir, nasmDir, hackDir, gui, verbose)
     print("- to I-VMTranslator/bin/nasm/ ")
     print("------------------------------")
     compileVM(False, jarVM, vmDir+'vm/', nasmDir)
-#    compileVM(False, jarVM, vmDir+'vmExamples/', nasmDir)
+    compileVM(False, jarVM, vmDir+'vmExamples/', nasmDir)
 
     # montador
     print("-------------------------")
@@ -55,21 +56,15 @@ if __name__ == "__main__":
     ap.add_argument("-g", "--gui", help="carrega model sim", action='store_true')
     args = vars(ap.parse_args())
 
-    if args["verbose"]:
-        verbose = True
-    else:
-        verbose = False
-
-    if args["gui"]:
-        gui = True
-    else:
-        gui = False
-
     pwd = os.path.dirname(os.path.abspath(__file__))
-    testDir = pwd+"/tests/"
-    vmDir = pwd+"/src/"
+    testDir = pwd+"/../I-VM/tests/"
+    vmDir = pwd+"/../I-VM/src/"
     nasm = pwd+"/bin/nasm/"
     hack = pwd+"/bin/hack/"
-
-    testeVM(ASSEMBLER_JAR, VMTRANSLATOR_JAR, vmDir=vmDir, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=gui, verbose=verbose)
+    
+    genJAR()
+    
+    jar = pwd+'/VMtranslator/Z01-VMTranslator.jar'
+    print(jar)
+    testeVM(ASSEMBLER_JAR, jar , vmDir=vmDir, testDir=testDir, nasmDir=nasm, hackDir=hack, gui=False, verbose=False)
 

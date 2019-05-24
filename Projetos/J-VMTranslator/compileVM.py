@@ -21,7 +21,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("-b", "--bootstrap", help="insere inicialização do sistema", action='store_true')
     args = vars(ap.parse_args())
-
+    
     if args["bootstrap"]:
         bs = True
     else:
@@ -29,8 +29,8 @@ if __name__ == "__main__":
 
     pwd = os.path.dirname(os.path.abspath(__file__))
     vmDir = pwd+"/src/vm/"
-    vmExDir = pwd+"/src/vmExamples/"
+    vmExDir = pwd+"/../I-VM/src/vmExamples/"
     nasmDir = pwd+"/bin/nasm/"
-    jar = os.path.abspath(VMTRANSLATOR_JAR)
+    jar = pwd+'/VMtranslator/Z01-VMTranslator.jar'
     compileVM(bs, jar, vmDir, nasmDir)
     compileVM(bs, jar, vmExDir, nasmDir)
