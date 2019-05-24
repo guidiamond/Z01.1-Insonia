@@ -63,7 +63,7 @@ def genJAR():
             print("================================================")
             sys.exit(-1)
 
-    sys.exit(0)
+    #sys.exit(0)
 
 if __name__ == "__main__":
     genJAR()
