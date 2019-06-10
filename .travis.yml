@@ -52,3 +52,6 @@ script:
   - python3 Projetos/F-Assembly/testeAssembly.py
   - python3 Projetos/G-Computador/testeHW.py
   - python3 Projetos/G-Computador/testeAssemblyMyCPU.py
+  - python3 Projetos/G-Computador/testeAssemblyMyCPU.py
+  - python3 Projetos/J-VMTranslator/genJAR.py
+  - python3 Projetos/J-VMTranslator/testeVMtranslator.py
