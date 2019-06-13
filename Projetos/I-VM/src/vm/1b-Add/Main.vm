@@ -12,6 +12,10 @@
 // ----------------------------------
 
 function Main.main 0
+	push constant 5
+	push constant 9
+	add
+	pop temp 0
 
 
 // esse loop sempre deve existir!
@@ -19,3 +23,4 @@ function Main.main 0
 // executar lixo de memoria.
 label while
   goto while
+

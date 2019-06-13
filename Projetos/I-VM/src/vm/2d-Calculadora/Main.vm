@@ -11,7 +11,7 @@
 //  operação :
 //    3^3
 //
-//  O resultado deve ser salvo em temp 1
+//  O resultado deve ser salvo em temp 2
 //
 //  Voce deve implementar a funcao de pow!
 //  e usar aqui no main para implementar
@@ -32,3 +32,4 @@ function Main.main 0
 
 label while
     goto while
+
