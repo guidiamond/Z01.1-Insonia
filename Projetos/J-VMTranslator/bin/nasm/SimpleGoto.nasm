@@ -1,36 +1,42 @@
 ; 0 - PUSH constant 5
-leaw $5,%A
-movw %A,%D
-leaw $SP, %A
-movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
-leaw $SP, %A
+leaw $5, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
-goto $END2.SimpleGoto
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
+; 1 - Goto Incondicional
+leaw $SimpleGotoEND2, %A
+jmp
+nop
 ; Label (marcador)
-$DUMMY.SimpleGoto
-; 1 - PUSH constant 3
-leaw $3,%A
-movw %A,%D
-leaw $SP, %A
-movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
-leaw $SP, %A
+SimpleGotoDUMMY:
+; 2 - PUSH constant 3
+leaw $3, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
 ; Label (marcador)
-$END2.SimpleGoto
-; 2 - POP temp 0
-leaw $SP, %A
-leaw (%A), %A
-decw %A
-movw (%A), %S
-leaw $Temp,%A
+SimpleGotoEND2:
+; 3 - POP temp 0
+leaw $SP,%A
 movw (%A), %D
-movw %S,(%A)
-leaw $SP, %A
-leaw (%A), %S
-decw %S
-movw %S, (%A)
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+leaw $0, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw %D, (%A)
 ; End

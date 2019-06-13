@@ -1,146 +1,222 @@
 ; 0 - PUSH constant 0
-leaw $0,%A
-movw %A,%D
-leaw $SP, %A
-movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
-leaw $SP, %A
+leaw $0, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
 ; 1 - POP temp 0
-leaw $SP, %A
-leaw (%A), %A
-decw %A
-movw (%A), %S
-leaw $Temp,%A
+leaw $SP,%A
 movw (%A), %D
-movw %S,(%A)
-leaw $SP, %A
-leaw (%A), %S
-decw %S
-movw %S, (%A)
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+leaw $0, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw %D, (%A)
 ; 2 - PUSH constant 1
-leaw $1,%A
-movw %A,%D
-leaw $SP, %A
-movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
-leaw $SP, %A
+leaw $1, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
 ; 3 - POP temp 1
-leaw $SP, %A
-leaw (%A), %A
-decw %A
-movw (%A), %S
-leaw $Temp,%A
+leaw $SP,%A
 movw (%A), %D
-leaw $1,%A
-addw %A, %D, %A
-movw %S,(%A)
-leaw $SP, %A
-leaw (%A), %S
-decw %S
-movw %S, (%A)
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+leaw $1, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw %D, (%A)
 ; Label (marcador)
-$LOOP_START.BasicLoop
+BasicLoopLOOP_START:
 ; 4 - PUSH temp 0
-leaw $SP, %A
-movw (%A), %S
-leaw $Temp, %A
-movw (%A), %D
-movw (%A),%D
-decw %S
+leaw $0, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
 movw %S, %A
-movw %D,(%A)
+movw (%A), %S
 leaw $SP, %A
-movw %S,(%A)
+movw (%A), %A
+movw %S, (%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
 ; 5 - PUSH constant 10
-leaw $10,%A
-movw %A,%D
-leaw $SP, %A
-movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
-leaw $SP, %A
+leaw $10, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
 ; 6 - EQ
-if-goto $END.BasicLoop
-; 7 - PUSH temp 0
-leaw $SP, %A
-movw (%A), %S
-leaw $Temp, %A
+leaw $SP,%A
+movw (%A), %A
+decw %A
 movw (%A), %D
-movw (%A),%D
-decw %S
-movw %S, %A
-movw %D,(%A)
+decw %A
+movw (%A), %S
+subw %S, %D, %S
+movw %A, %D
+incw %D
 leaw $SP, %A
-movw %S,(%A)
-; 8 - PUSH constant 1
-leaw $1,%A
-movw %A,%D
+movw %D, (%A)
+leaw $EQBasicLoop0, %A
+je %S
+nop
+leaw $0, %A
+movw %A, %S
+leaw $EQ-ENDBasicLoop0, %A
+jmp
+nop
+EQBasicLoop0:
+leaw $65535, %A
+movw %A, %S
+EQ-ENDBasicLoop0:
 leaw $SP, %A
 movw (%A), %A
-movw %D,(%A)
-addw %A,$1,%S
+decw %A
+movw %S, (%A)
+; 7 - Goto Condicional
 leaw $SP, %A
+movw (%A), %D
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+notw %D
+leaw $BasicLoopEND, %A
+je %D
+nop
+; 8 - PUSH temp 0
+leaw $0, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw (%A), %S
+leaw $SP, %A
+movw (%A), %A
+movw %S, (%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
+; 9 - PUSH constant 1
+leaw $1, %A
+movw %A,%S
+leaw $SP,%A
+movw (%A),%A
 movw %S,(%A)
-; 9 - ADD
-; 10 - POP temp 0
-leaw $SP, %A
-leaw (%A), %A
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
+; 10 - ADD
+leaw $SP,%A
+movw (%A), %A
 decw %A
 movw (%A), %S
-leaw $Temp,%A
+decw %A
 movw (%A), %D
-movw %S,(%A)
-leaw $SP, %A
-leaw (%A), %S
-decw %S
+addw %S, %D, %S
 movw %S, (%A)
-; 11 - PUSH temp 1
-leaw $SP, %A
-movw (%A), %S
-leaw $Temp, %A
+movw %A, %D
+leaw $SP,%A
+incw %D
+movw %D, (%A)
+; 11 - POP temp 0
+leaw $SP,%A
 movw (%A), %D
-leaw $1 ,%A
-addw %A,%D,%A
-movw (%A),%D
-decw %S
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+leaw $0, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
 movw %S, %A
-movw %D,(%A)
-leaw $SP, %A
-movw %S,(%A)
+movw %D, (%A)
 ; 12 - PUSH temp 1
-leaw $SP, %A
-movw (%A), %S
-leaw $Temp, %A
-movw (%A), %D
-leaw $1 ,%A
-addw %A,%D,%A
-movw (%A),%D
-decw %S
+leaw $1, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
 movw %S, %A
-movw %D,(%A)
+movw (%A), %S
 leaw $SP, %A
-movw %S,(%A)
-; 13 - ADD
-; 14 - POP temp 1
+movw (%A), %A
+movw %S, (%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
+; 13 - PUSH temp 1
+leaw $1, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw (%A), %S
 leaw $SP, %A
-leaw (%A), %A
+movw (%A), %A
+movw %S, (%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D, (%A)
+; 14 - ADD
+leaw $SP,%A
+movw (%A), %A
 decw %A
 movw (%A), %S
-leaw $Temp,%A
+decw %A
 movw (%A), %D
-leaw $1,%A
-addw %A, %D, %A
-movw %S,(%A)
-leaw $SP, %A
-leaw (%A), %S
-decw %S
+addw %S, %D, %S
 movw %S, (%A)
-goto $LOOP_START.BasicLoop
+movw %A, %D
+leaw $SP,%A
+incw %D
+movw %D, (%A)
+; 15 - POP temp 1
+leaw $SP,%A
+movw (%A), %D
+decw %D
+movw %D, (%A)
+movw (%A), %A
+movw (%A), %D
+leaw $1, %A
+movw %A, %S
+leaw $5, %A
+addw %A, %S, %S
+movw %S, %A
+movw %D, (%A)
+; 16 - Goto Incondicional
+leaw $BasicLoopLOOP_START, %A
+jmp
+nop
 ; Label (marcador)
-$END.BasicLoop
+BasicLoopEND:
 ; End
