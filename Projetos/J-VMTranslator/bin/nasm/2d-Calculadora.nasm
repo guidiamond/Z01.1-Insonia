@@ -197,4 +197,175 @@ movw %S, (%A)
 ; Label (marcador)
 $while.Main
 goto $while.Main
+; 24 - PUSH constant 0
+leaw $0,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 25 - POP local 0
+leaw $SP, %A
+leaw (%A), %A
+decw %A
+movw (%A), %S
+leaw $LCL,%A
+movw (%A), %D
+movw %S,(%A)
+leaw $SP, %A
+leaw (%A), %S
+decw %S
+movw %S, (%A)
+; 26 - PUSH argument 1
+leaw $SP, %A
+movw (%A), %S
+leaw $ARG, %A
+movw (%A), %D
+leaw $1 ,%A
+addw %A,%D,%A
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 27 - POP local 1
+leaw $SP, %A
+leaw (%A), %A
+decw %A
+movw (%A), %S
+leaw $LCL,%A
+movw (%A), %D
+leaw $1,%A
+addw %A, %D, %A
+movw %S,(%A)
+leaw $SP, %A
+leaw (%A), %S
+decw %S
+movw %S, (%A)
+; Label (marcador)
+$loop.pow
+; 28 - PUSH argument 0
+leaw $SP, %A
+movw (%A), %S
+leaw $ARG, %A
+movw (%A), %D
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 29 - PUSH argument 0
+leaw $SP, %A
+movw (%A), %S
+leaw $ARG, %A
+movw (%A), %D
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 31 - PUSH local 0
+leaw $SP, %A
+movw (%A), %S
+leaw $LCL, %A
+movw (%A), %D
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 32 - ADD
+; 33 - POP local 0
+leaw $SP, %A
+leaw (%A), %A
+decw %A
+movw (%A), %S
+leaw $LCL,%A
+movw (%A), %D
+movw %S,(%A)
+leaw $SP, %A
+leaw (%A), %S
+decw %S
+movw %S, (%A)
+; 34 - PUSH local 1
+leaw $SP, %A
+movw (%A), %S
+leaw $LCL, %A
+movw (%A), %D
+leaw $1 ,%A
+addw %A,%D,%A
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 35 - PUSH constant 1
+leaw $1,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 36 - SUB
+; 37 - POP local 1
+leaw $SP, %A
+leaw (%A), %A
+decw %A
+movw (%A), %S
+leaw $LCL,%A
+movw (%A), %D
+leaw $1,%A
+addw %A, %D, %A
+movw %S,(%A)
+leaw $SP, %A
+leaw (%A), %S
+decw %S
+movw %S, (%A)
+; 38 - PUSH local 1
+leaw $SP, %A
+movw (%A), %S
+leaw $LCL, %A
+movw (%A), %D
+leaw $1 ,%A
+addw %A,%D,%A
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
+; 39 - PUSH constant 0
+leaw $0,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 40 - EQ
+if-goto $end.pow
+goto $loop.pow
+; Label (marcador)
+$end.pow
+; 41 - PUSH local 0
+leaw $SP, %A
+movw (%A), %S
+leaw $LCL, %A
+movw (%A), %D
+movw (%A),%D
+decw %S
+movw %S, %A
+movw %D,(%A)
+leaw $SP, %A
+movw %S,(%A)
 ; End

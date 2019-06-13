@@ -12,10 +12,31 @@
 // ----------------------------------
 
 function Main.main 0
+	push constant 15
+	push constant 5
+	push constant 1
+	pop temp 1
 
+label subt
+	push temp 1
+	push constant 1
+	add
+	pop temp 1
+	sub
+	pop temp 0
+	push temp 0
+	push temp 0
+	push constant 6
+	gt
+	if-goto subt
+
+push temp 1
+pop temp 0
+	
 
 // esse loop sempre deve existir!
 // caso contrario o computador vai
 // executar lixo de memoria.
 label while
   goto while
+

@@ -162,6 +162,58 @@ movw %S, %A
 movw %D,(%A)
 leaw $SP, %A
 movw %S,(%A)
+; 19 - PUSH constant 14
+leaw $14,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 20 - PUSH constant 2
+leaw $2,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 21 - ADD
+; 22 - PUSH constant 8
+leaw $8,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 23 - PUSH constant 1
+leaw $1,%A
+movw %A,%D
+leaw $SP, %A
+movw (%A), %A
+movw %D,(%A)
+addw %A,$1,%S
+leaw $SP, %A
+movw %S,(%A)
+; 24 - SUB
+; 26 - POP temp 1
+leaw $SP, %A
+leaw (%A), %A
+decw %A
+movw (%A), %S
+leaw $Temp,%A
+movw (%A), %D
+leaw $1,%A
+addw %A, %D, %A
+movw %S,(%A)
+leaw $SP, %A
+leaw (%A), %S
+decw %S
+movw %S, (%A)
 ; Label (marcador)
 $while.Main
 goto $while.Main

@@ -1,1 +1,28 @@
-function pow 3
+function pow 2
+	push constant 0
+	pop local 0
+	push argument 1
+	pop local 1
+
+label loop
+	push argument 0
+	push argument 0
+	call mult 2
+	push local 0
+	add
+	pop local 0
+
+	push local 1
+	push constant 1
+	sub
+	pop local 1
+
+	push local 1
+	push constant 0
+	eq
+	if-goto end
+	goto loop
+
+label end
+	push local 0
+	return
