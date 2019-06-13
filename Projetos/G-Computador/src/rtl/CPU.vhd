@@ -215,6 +215,7 @@ architecture arch of CPU is
 
 
 begin
+   c_f(1) <= '0';
    muxALUI: Mux16 port map(s_ALUout,instruction(15 downto 0),c_muxALUI_A,s_muxALUI_Aout);
    muxSD: Mux16 port map(s_regSout,s_regDout,c_muxSD_ALU,s_muxSDout);
    muxAMD: Mux16 port map(s_regDout,s_muxAM_out,c_muxAMD_ALU,s_muxAMD_ALUout);
